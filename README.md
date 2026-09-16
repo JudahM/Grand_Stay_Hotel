@@ -1,1 +1,1 @@
-# Grand_Stay_Hotel
+# Grand Stay Hotel
