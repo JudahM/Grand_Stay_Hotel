@@ -9,21 +9,20 @@
 
 
 <body>
-    <header>
-        <div class="logo">
+    <header class="flex-container">
+        <h1 class="logo-light">
             <a href="#">GRAND STAY</a>
-        </div>
-        <nav>
+        </h1>
+        <nav class="flex-container nav-menu">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ROOMS</a></li>
-                <li><a href="#">OUR STRUCTURE</a></li>
-                <li><a href="#">EXPERIENCES</a></li>
+                <li><a class="nav-option" href="#">HOME</a></li>
+                <li><a class="nav-option" href="#">ROOMS</a></li>
+                <li><a class="nav-option" href="#">OUR STRUCTURE</a></li>
+                <li><a class="nav-option" href="#">EXPERIENCES</a></li>
             </ul>
         </nav>
-        <div class="header-action">
-            <a href="#" class="btn-primary">See Rooms</a>
-        </div>
+
+        <a href="#" class="btn-primary header action">See Rooms</a>
     </header>
 
 
@@ -52,6 +51,7 @@
             </div>
         </section>
 
+
         <!-- SECTION - Why Choose Us? -->
         <section class="features">
             <div class="section-header">
@@ -59,7 +59,7 @@
                 <h2>Why Choose Us?</h2>
             </div>
 
-            <!-- Linha 1: Imagem na esquerda, texto na direita -->
+            <!-- Info block 1 -->
             <div class="feature-row">
                 <div class="feature-image">
                     <img src="room_01.jpg" alt="Room 01 preview image">
@@ -75,6 +75,114 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Info block 2 -->
+            <div class="feature-row reverse">
+                <div class="feature-content">
+                    <div class="feature-item">
+                        <h3>Pool & SPA</h3>
+                        <p>Unwind in our serene spa and pool facilities, designed to restore mind, body, and spirit.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Fine Dining</h3>
+                        <p>Savor locally inspired cuisine crafted by our award-winning chefs, paired with carefully selected wines.</p>
+                    </div>
+                </div>
+                <div class="feature-image">
+                    <img src="piscina.jpg" alt="Área da piscina com espreguiçadeiras">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION - Our Rooms -->
+        <section class="rooms">
+            <div class="section-header center">
+                <h2>Our Rooms</h2>
+                <p>Designed for Rest. Curated for You.</p>
+            </div>
+
+            <div class="rooms-carousel">
+                <!-- Left-facing arrow - PREVIIOUS -->
+                <button class="carousel-control prev" aria-label="Previous">&larr;</button>
+
+                <!-- Cartões dos quartos -->
+                <div class="rooms-container">
+                    <!-- Room Card 01 -->
+                    <article class="room-card">
+                        <div class="card-header">
+                            <h3>Deluxe Room</h3>
+                            <span class="guests">&bull; 2 guests</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Cozy comfort with modern essentials, warm tones and curated details.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price"><strong>From $250</strong> / night</span>
+                            <a href="#" class="btn-transparent">View Details</a>
+                        </div>
+                    </article>
+
+                    <!-- Room Card 02 -->
+                    <article class="room-card">
+                        <div class="card-header">
+                            <h3>Deluxe Room</h3>
+                            <span class="guests">&bull; 2 guests</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Cozy comfort with modern essentials, warm tones and curated details.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price"><strong>From $250</strong> / night</span>
+                            <a href="#" class="btn-transparent">View Details</a>
+                        </div>
+                    </article>
+
+                    <!-- Room Card 03 -->
+                    <article class="room-card">
+                        <div class="card-header">
+                            <h3>Deluxe Room</h3>
+                            <span class="guests">&bull; 2 guests</span>
+                        </div>
+                        <div class="card-body">
+                            <p>Cozy comfort with modern essentials, warm tones and curated details.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price"><strong>From $250</strong> / night</span>
+                            <a href="#" class="btn-transparent">View Details</a>
+                        </div>
+                    </article>
+
+                <!-- Right-facing arrow - NEXT -->
+                <button class="carousel-control next" aria-label="Next">&rarr;</button>
+            </div>
+        </section>
+
+
+        <!-- SECTION - Testimonials -->
+        <section class="testimonial">
+            <div class="quote-icon">
+                <img src="quote-icon.svg" alt="Aspas">
+            </div>
+            <blockquote>
+                "An exceptional experience from start to finish. The attention to detail, warm hospitality, and beautiful surroundings made it truly unforgettable."
+            </blockquote>
+            <cite>- Sophia M., New York</cite>
+        </section>
+
+        <!-- SECTION - Call To Action (CTA) -->
+        <section class="cta">
+            <div class="cta-box">
+                <div class="cta-text">
+                    <h2>Ready for Your Grand Stay?</h2>
+                    <p>Reserve now and enjoy exclusive benefits & best rate guarantee.</p>
+                </div>
+                <div class="cta-button">
+                    <a href="#" class="btn-light">Reserve Now</a>
+                </div>
+            </div>
+            <span class="bg-disclaimer">* Background image area</span>
+        </section>
     </main>
 
 
