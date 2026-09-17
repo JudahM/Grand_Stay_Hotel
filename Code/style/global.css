@@ -43,6 +43,7 @@ header {
     padding: 4.8rem;
 
     justify-content: space-between;
+    align-items: center;
 }
 
 header a {
