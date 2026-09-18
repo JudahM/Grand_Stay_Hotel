@@ -7,9 +7,12 @@
 :root {
     /* Color */
     --primary-dark-brown: #3B3330;
+    --primary-tan: #A68A6D;
+    --bg-light: #F7F6F2;
 
     --light-text: white;
     --dark-text: black;
+    --muted-text: #666666;
 
     /* Text */
         /* Family */
@@ -29,8 +32,19 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    background-color: var(--bg-light);
+    font-family: sans-serif; /* Fonte padrão para textos */
+    color: var(--dark-text);
+}
+
 .flex-container {
     display: flex;
+}
+
+h1, h2, h3, .footer-logo {
+    font-family: serif; 
+    color: var(--primary-dark-brown);
 }
 
 li {
@@ -63,3 +77,16 @@ header ul li {
 header ul li:first-child {
     margin-left: 0;
 }
+
+.btn-primary, .btn-dark, .btn-transparent, .btn-light {
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+.btn-primary, .btn-transparent { background-color: var(--primary-tan); color: var(--light-text); }
+.btn-dark { background-color: var(--primary-dark-brown); color: var(--light-text); }
+.btn-light { background-color: var(--light-text); color: var(--primary-dark-brown); }
