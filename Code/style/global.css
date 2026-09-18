@@ -1,92 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap');
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
 :root {
-    /* Color */
-    --primary-dark-brown: #3B3330;
-    --primary-tan: #A68A6D;
-    --bg-light: #F7F6F2;
-
-    --light-text: white;
-    --dark-text: black;
-    --muted-text: #666666;
-
-    /* Text */
-        /* Family */
-    
-        /* Size */
-    
-        /* Weight */
-    /* Effects */
-    --card-drop-shadow:
-        0 0.4rem 2.4rem 0 rgba(0, 0, 0, 0.08);
-
-    --card-inner-shadow:
-        inset -19rem 0 6.2rem 2.6rem rgba(0, 0, 0, 0.45);
+    --primary-dark-brown: #3b3330;
+    --primary-tan: #a68a6d;
+    --bg-light: #f7f6f2;
+    --footer-bg: #211e1c;
+    --light-text: #fff;
+    --dark-text: #241f1d;
+    --body-text: #5e554f;
+    --muted-text: #9d8e7e;
+    --card-drop-shadow: 0 .4rem 2.4rem rgba(0, 0, 0, .08);
 }
-
 html {
     font-size: 62.5%;
 }
-
 body {
-    background-color: var(--bg-light);
-    font-family: sans-serif; /* Fonte padrão para textos */
+    min-width: 320px;
+    background: var(--bg-light);
     color: var(--dark-text);
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-size: 1.6rem;
 }
-
-.flex-container {
-    display: flex;
+a {
+    color: inherit;
+    text-decoration: none;
 }
-
-h1, h2, h3, .footer-logo {
-    font-family: serif; 
-    color: var(--primary-dark-brown);
-}
-
 li {
     list-style: none;
 }
-
-a {
-    text-decoration: none;
+h1, h2, h3, .footer-logo {
+    font-family: 'Playfair Display', Georgia, serif;
 }
-
-/* ----- HEADER ----- */
-header {
-    background-color: #3B3330;
-
-    padding: 4.8rem;
-
-    justify-content: space-between;
-    align-items: center;
+.flex-container {
+    display: flex;
 }
-
-header a {
-    color: var(--light-text);
-    font-size: 2.0rem;
-}
-
-header ul li {
-    margin-left: 36px;
-}
-
-header ul li:first-child {
-    margin-left: 0;
-}
-
-.btn-primary, .btn-dark, .btn-transparent, .btn-light {
-    padding: 1.2rem 2.4rem;
-    border-radius: 0.4rem;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    display: inline-block;
-}
-
-.btn-primary, .btn-transparent { background-color: var(--primary-tan); color: var(--light-text); }
-.btn-dark { background-color: var(--primary-dark-brown); color: var(--light-text); }
-.btn-light { background-color: var(--light-text); color: var(--primary-dark-brown); }
