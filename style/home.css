@@ -58,7 +58,7 @@ header {
     min-height: 45.4rem;
     padding: 6rem 8rem;
     color: var(--light-text);
-    background: linear-gradient(90deg, rgba(0, 0, 0, .34), rgba(0, 0, 0, .12)), url('../images/home/hotel_entrance_hall.jpg') center 53% / cover no-repeat;
+    /* background: linear-gradient(90deg, rgba(0, 0, 0, .34), rgba(0, 0, 0, .12)), url('../images/home/hotel_entrance_hall.jpg') center 53% / cover no-repeat; */
 }
 .hero-content {
     width: 50rem;
