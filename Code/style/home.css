@@ -1,196 +1,207 @@
-/* ---------- Hero Section ---------- */
-.hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 8rem 4.8rem;
-    min-height: 70vh;
-}
+    /* ---------- Hero Section ---------- */
+    .hero {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8rem 4.8rem;
+        min-height: 70vh;
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    max-width: 50%;
-}
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('../images/home/hotel_entrance_hall.jpg');
+    }
 
-.booking-bar form {
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
-    
-    background-color: white;
-    padding: 3.2rem;
-    width: max-content;
-    
-    position: absolute;
-    bottom: -4rem;
-    right: 4.8rem;
-}
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        max-width: 50%;
+    }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
+    .booking-bar form {
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+        
+        background-color: white;
+        padding: 3.2rem;
+        width: max-content;
+        
+        position: absolute;
+        bottom: -4rem;
+        right: 4.8rem;
+    }
 
-/* ---------- 'Why Choose Us?' Section ---------- */
-.features {
-    padding: 12rem 4.8rem 8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
-}
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
 
-.section-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
+    /* ---------- 'Why Choose Us?' Section ---------- */
+    .features {
+        padding: 12rem 4.8rem 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
 
-.feature-row {
-    display: flex;
-    align-items: center;
-    gap: 6.4rem;
-}
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
 
-.feature-row.reverse {
-    flex-direction: row-reverse;
-}
+    .feature-row {
+        display: flex;
+        align-items: center;
+        gap: 6.4rem;
+    }
 
-.feature-image, 
-.feature-content {
-    flex: 1; 
-}
+    .feature-row.reverse {
+        flex-direction: row-reverse;
+    }
 
-.feature-content {
-    display: flex;
-    flex-direction: column;
-    gap: 4.8rem;
-}
+    .feature-image, 
+    .feature-content {
+        flex: 1; 
+    }
 
-.feature-item {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
+    .feature-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
+    }
 
-.feature-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
 
-/* ---------- Rooms Section ---------- */
-.rooms {
-    padding: 8rem 4.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 6.4rem;
-}
+    .feature-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
-.section-header.center {
-    align-items: center;
-    text-align: center;
-}
+    /* ---------- Rooms Section ---------- */
+    .rooms {
+        padding: 8rem 4.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 6.4rem;
+    }
 
-.rooms-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3.2rem;
-}
+    .section-header.center {
+        align-items: center;
+        text-align: center;
+    }
 
-.rooms-container {
-    display: flex;
-    gap: 2.4rem;
-    flex: 1; /* Ocupa todo o espaço disponível entre as setas */
-}
+    .rooms-carousel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3.2rem;
+    }
 
-/* O flex: 1 garante que os 3 cards tenham exatamente a mesma largura */
+    .rooms-container {
+        display: flex;
+        gap: 2.4rem;
+        flex: 1;
+    }
+
+    .room-card {
+        flex: 1; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12rem;
+        padding: 2.4rem;
+        border: 1px solid #ccc;
+    }
+
+    .card-header, 
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .testimonial {
+        padding: 8rem 4.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* ---------- Call To Action Section ---------- */
+    .cta {
+        padding: 8rem 4.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    .cta-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 6.4rem 4.8rem;
+        background-color: #3B3330;
+        color: white;
+    }
+
+    .cta-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    /* -------------------- FOOTER --------------------  */
+    footer {
+        background-color: #3B3330;
+        color: white;
+        padding: 8rem 4.8rem;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 4.8rem;
+    }
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    .footer-col ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 1.6rem;
+    }
+
+    /* ---------- Room Card ---------- */
 .room-card {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Empurra o header pro topo e footer pra base */
-    gap: 12rem; /* Espaçamento provisório interno do card */
-    padding: 2.4rem;
-    border: 1px solid #ccc; /* Borda provisória para você enxergar os cards */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('../images/rooms/room-02.jpg');
 }
 
-.card-header, 
-.card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* ---------- Testimonials Section ---------- */
-.testimonial {
-    padding: 8rem 4.8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 3.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* ---------- Call To Action Section ---------- */
-.cta {
-    padding: 8rem 4.8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.6rem;
-}
-
-.cta-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 6.4rem 4.8rem;
-    background-color: #3B3330;
-    color: white;
-}
-
-.cta-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-/* -------------------- FOOTER --------------------  */
-footer {
-    background-color: #3B3330;
-    color: white;
-    padding: 8rem 4.8rem;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 4.8rem;
-}
-
-.footer-col {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-}
-
-.footer-col ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-
-.social-icons {
-    display: flex;
-    gap: 1.6rem;
+.room-card {
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
