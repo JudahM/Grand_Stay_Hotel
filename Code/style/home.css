@@ -1,0 +1,429 @@
+/* ----- Header ----- */
+header {
+    align-items: center;
+    justify-content: space-between;
+    min-height: 11.2rem;
+    padding: 2.7rem 4.8rem 2.7rem 2.8rem;
+    background: var(--primary-dark-brown);
+    color: var(--light-text);
+}
+.logo-light {
+    font-size: 2.9rem;
+    line-height: 1;
+}
+.logo-light a,
+.nav-option {
+    color: var(--light-text);
+}
+.nav-menu ul {
+    align-items: center;
+    gap: 4rem;
+}
+.nav-option {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.btn-primary,
+.btn-dark,
+.btn-transparent,
+.btn-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.1rem;
+    padding: 0 2.1rem;
+    border: 0;
+    border-radius: .8rem;
+    cursor: pointer;
+    font: 600 1.6rem 'DM Sans', Arial, sans-serif;
+}
+.btn-primary,
+.btn-transparent {
+    background: var(--primary-tan);
+    color: var(--light-text);
+}
+.btn-dark {
+    background: var(--primary-dark-brown);
+    color: var(--light-text);
+}
+.btn-light {
+    background: #f8f5f1;
+    color: var(--primary-dark-brown);
+}
+/* ----- Hero ----- */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 45.4rem;
+    padding: 6rem 8rem;
+    color: var(--light-text);
+    background: linear-gradient(90deg, rgba(0, 0, 0, .34), rgba(0, 0, 0, .12)), url('../images/home/hotel_entrance_hall.jpg') center 53% / cover no-repeat;
+}
+.hero-content {
+    width: 50rem;
+    margin-top: -1.4rem;
+}
+.hero-content h1 {
+    color: var(--light-text);
+    font-size: 5.4rem;
+    line-height: 1.1;
+}
+.hero-content p {
+    max-width: 51rem;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.22;
+}
+.image-caption {
+    position: absolute;
+    bottom: 1rem;
+    left: 2.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.booking-bar form {
+    position: absolute;
+    right: 4.1%;
+    bottom: 3.8rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 2.4rem;
+    min-width: 61.7rem;
+    padding: 3.6rem 2.1rem 3.5rem;
+    background: #fff;
+    border-radius: 1.2rem;
+    box-shadow: var(--card-drop-shadow);
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.input-group label {
+    color: var(--primary-dark-brown);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.input-group input {
+    width: 14.6rem;
+    height: 4rem;
+    padding: 0 .9rem;
+    border: .1rem solid #ded5cc;
+    border-radius: .8rem;
+    color: var(--primary-dark-brown);
+    font: 1.4rem 'DM Sans', Arial, sans-serif;
+}
+.booking-bar .btn-dark {
+    min-width: 23.5rem;
+    height: 3.3rem;
+}
+/* ----- Why choose us ----- */
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 5.4rem;
+    max-width: 1272px;
+    margin: 0 auto;
+    padding: 3.5rem 6rem 5.9rem;
+}
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+}
+.subtitle {
+    color: var(--muted-text);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .02rem;
+}
+.section-header h2 {
+    font-size: 4.4rem;
+    line-height: 1.05;
+}
+.feature-row {
+    display: grid;
+    grid-template-columns: 1fr 1.22fr;
+    align-items: center;
+    gap: 3.6rem;
+    padding: 0 5rem;
+}
+.feature-row.reverse {
+    grid-template-columns: 1.22fr 1fr;
+}
+.feature-row.reverse .feature-image {
+    grid-column: 2;
+    grid-row: 1;
+}
+.feature-row.reverse .feature-content {
+    grid-column: 1;
+    grid-row: 1;
+}
+.feature-image img {
+    display: block;
+    width: 100%;
+    height: 30.7rem;
+    border-radius: .2rem;
+    object-fit: cover;
+}
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.feature-item h3 {
+    color: var(--primary-dark-brown);
+    font-size: 3rem;
+    line-height: 1;
+}
+.feature-item p {
+    max-width: 57rem;
+    color: var(--body-text);
+    font-size: 1.7rem;
+    line-height: 1.25;
+}
+/* ----- Rooms ----- */
+.rooms {
+    overflow: hidden;
+    padding: 6.6rem 0 3.8rem;
+    background: #f5f0eb;
+}
+.section-header.center {
+    align-items: center;
+    text-align: center;
+}
+.rooms .section-header {
+    gap: 1.7rem;
+}
+.rooms .section-header h2 {
+    font-size: 4.5rem;
+}
+.rooms .section-header p {
+    font: 3rem 'Playfair Display', Georgia, serif;
+}
+.rooms-carousel {
+    position: relative;
+    display: flex;
+    gap: 5.3rem;
+    width: max-content;
+    margin-top: 6.7rem;
+    margin-left: 4.3%;
+}
+.carousel-control {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    width: 4.8rem;
+    height: 4.8rem;
+    border: 0;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: var(--card-drop-shadow);
+    color: var(--primary-dark-brown);
+    cursor: pointer;
+    font-size: 2.8rem;
+    line-height: 1;
+    transform: translateY(-50%);
+}
+.carousel-control.prev {
+    left: -3rem;
+}
+.carousel-control.next {
+    right: auto;
+    left: calc(100vw - 17.1rem);
+}
+.room-card {
+    position: relative;
+    display: flex;
+    flex: 0 0 56.4rem;
+    height: 25rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.7rem 2rem 1.3rem;
+    overflow: hidden;
+    border: .7rem solid #fff;
+    border-radius: 1.7rem;
+    box-shadow: var(--card-drop-shadow);
+    color: var(--light-text);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.room-card::before {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, .48);
+    content: '';
+}
+.room-card > * {
+    position: relative;
+    z-index: 1;
+}
+.room-card h3 {
+    color: var(--light-text);
+    font-size: 2rem;
+}
+.card-header,
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-header {
+    justify-content: flex-end;
+    gap: .8rem;
+}
+.guests {
+    color: #c6b5a3;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card-body {
+    align-self: flex-end;
+    width: 23rem;
+    color: #c6b5a3;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.15;
+    text-align: right;
+}
+.price {
+    font: italic 700 2.5rem 'Playfair Display', Georgia, serif;
+}
+.btn-transparent {
+    min-height: 3.6rem;
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+}
+/* ----- Testimonial and CTA ----- */
+.testimonial {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 89rem;
+    margin: 0 auto;
+    padding: 1rem 2rem 6.1rem;
+    text-align: center;
+}
+.quote-icon {
+    height: 3.2rem;
+    color: #cdbb99;
+    font: 7rem/1 'Playfair Display', Georgia, serif;
+}
+.quote-icon::after {
+    content: '”';
+}
+.quote-icon img {
+    display: none;
+}
+blockquote {
+    max-width: 76rem;
+    font: italic 2.8rem/1.13 'Playfair Display', Georgia, serif;
+}
+.testimonial cite {
+    margin-top: .5rem;
+    color: var(--muted-text);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+}
+.cta {
+    padding: 0 6rem 3.9rem;
+}
+.cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 112rem;
+    min-height: 17.7rem;
+    margin: 0 auto;
+    padding: 4.2rem 15.7rem;
+    border-radius: 1.7rem;
+    background: var(--primary-dark-brown);
+    color: var(--light-text);
+}
+.cta-text h2 {
+    color: var(--light-text);
+    font-size: 2.8rem;
+}
+.cta-text p {
+    margin-top: 1.1rem;
+    color: #d2c9c0;
+    font-size: 1.8rem;
+}
+.cta-button .btn-light {
+    min-width: 28rem;
+    min-height: 5.5rem;
+    font-size: 1.8rem;
+}
+.bg-disclaimer {
+    display: block;
+    max-width: 1172px;
+    margin: 2rem auto 0;
+    color: #cfbd9e;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+/* ----- Footer ----- */
+footer {
+    padding: 5.6rem 4.8rem 6rem;
+    background: var(--footer-bg);
+    color: #a99b8a;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1368px;
+    margin: 0 auto;
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+.footer-logo {
+    color: var(--light-text);
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 400;
+}
+.footer-col address,
+.footer-col p,
+.footer-col a {
+    color: #a99b8a;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: 1.4;
+}
+.footer-col h4 {
+    color: var(--light-text);
+    font-size: 1.4rem;
+}
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons img {
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: contain;
+    filter: invert(66%) sepia(14%) saturate(476%) hue-rotate(353deg) brightness(91%) contrast(87%);
+}

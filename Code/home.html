@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Stay Hotel</title>
+
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/home.css">
 </head>
 
 
@@ -14,7 +17,7 @@
             <a href="#">GRAND STAY</a>
         </h1>
         <nav class="flex-container nav-menu">
-            <ul>
+            <ul class="flex-container">
                 <li><a class="nav-option" href="#">HOME</a></li>
                 <li><a class="nav-option" href="#">ROOMS</a></li>
                 <li><a class="nav-option" href="#">OUR STRUCTURE</a></li>
@@ -62,7 +65,7 @@
             <!-- Info block 1 -->
             <div class="feature-row">
                 <div class="feature-image">
-                    <img src="room_01.jpg" alt="Room 01 preview image">
+                    <img src="./images/home/home-image-01.jpg" alt="Um exemplo de quarto moderno e espaçoso">
                 </div>
                 <div class="feature-content">
                     <div class="feature-item">
@@ -78,6 +81,9 @@
 
             <!-- Info block 2 -->
             <div class="feature-row reverse">
+                <div class="feature-image">
+                    <img src="./images/home/home-image-02.jpg" alt="Área de piscina com cadeiras espreguiçadeiras e uma bela vista">
+                </div>
                 <div class="feature-content">
                     <div class="feature-item">
                         <h3>Pool & SPA</h3>
@@ -88,14 +94,11 @@
                         <p>Savor locally inspired cuisine crafted by our award-winning chefs, paired with carefully selected wines.</p>
                     </div>
                 </div>
-                <div class="feature-image">
-                    <img src="piscina.jpg" alt="Área da piscina com espreguiçadeiras">
-                </div>
             </div>
         </section>
 
 
-        <!-- SECTION - Our Rooms -->
+        <!-- SECTION - Rooms -->
         <section class="rooms">
             <div class="section-header center">
                 <h2>Our Rooms</h2>
@@ -103,54 +106,51 @@
             </div>
 
             <div class="rooms-carousel">
-                <!-- Left-facing arrow - PREVIIOUS -->
+                <!-- Left-facing arrow - PREVIOUS -->
                 <button class="carousel-control prev" aria-label="Previous">&larr;</button>
-
-                <!-- Cartões dos quartos -->
-                <div class="rooms-container">
                     <!-- Room Card 01 -->
-                    <article class="room-card">
-                        <div class="card-header">
+                    <article class="room-card" style="background-image: url('./images/rooms/room-01.jpg');">
+                        <section class="card-header">
                             <h3>Deluxe Room</h3>
                             <span class="guests">&bull; 2 guests</span>
-                        </div>
-                        <div class="card-body">
-                            <p>Cozy comfort with modern essentials, warm tones and curated details.</p>
-                        </div>
-                        <div class="card-footer">
+                        </section>
+                        
+                        <p class="card-body">Cozy comfort with modern essentials, warm tones and curated details.</p>
+
+                        <section class="card-footer">
                             <span class="price"><strong>From $250</strong> / night</span>
                             <a href="#" class="btn-transparent">View Details</a>
-                        </div>
+                        </section>
                     </article>
 
                     <!-- Room Card 02 -->
-                    <article class="room-card">
-                        <div class="card-header">
+                    <article class="room-card" style="background-image: url('./images/rooms/room-02.jpg');">
+                        <section class="card-header">
                             <h3>Deluxe Room</h3>
                             <span class="guests">&bull; 2 guests</span>
-                        </div>
-                        <div class="card-body">
-                            <p>Cozy comfort with modern essentials, warm tones and curated details.</p>
-                        </div>
-                        <div class="card-footer">
+                        </section>
+                        
+                        <p class="card-body">Cozy comfort with modern essentials, warm tones and curated details.</p>
+
+                        <section class="card-footer">
                             <span class="price"><strong>From $250</strong> / night</span>
                             <a href="#" class="btn-transparent">View Details</a>
-                        </div>
+                        </section>
                     </article>
 
                     <!-- Room Card 03 -->
-                    <article class="room-card">
-                        <div class="card-header">
+                    <article class="room-card" style="background-image: url('./images/rooms/room-03.jpg');">
+                        <section class="card-header">
                             <h3>Deluxe Room</h3>
                             <span class="guests">&bull; 2 guests</span>
-                        </div>
-                        <div class="card-body">
-                            <p>Cozy comfort with modern essentials, warm tones and curated details.</p>
-                        </div>
-                        <div class="card-footer">
+                        </section>
+                        
+                        <p class="card-body">Cozy comfort with modern essentials, warm tones and curated details.</p>
+
+                        <section class="card-footer">
                             <span class="price"><strong>From $250</strong> / night</span>
                             <a href="#" class="btn-transparent">View Details</a>
-                        </div>
+                        </section>
                     </article>
 
                 <!-- Right-facing arrow - NEXT -->
@@ -161,9 +161,7 @@
 
         <!-- SECTION - Testimonials -->
         <section class="testimonial">
-            <div class="quote-icon">
-                <img src="quote-icon.svg" alt="Aspas">
-            </div>
+            <div class="quote-icon" aria-hidden="true"></div>
             <blockquote>
                 "An exceptional experience from start to finish. The attention to detail, warm hospitality, and beautiful surroundings made it truly unforgettable."
             </blockquote>
@@ -219,9 +217,15 @@
             <div class="footer-col social">
                 <h4>FOLLOW US</h4>
                 <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn">IN</a>
-                    <a href="#" aria-label="Instagram">IG</a>
-                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="./assets/icons/linkedin-icon.svg" alt="">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="./assets/icons/instagram-icon.svg" alt="">
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <img src="./assets/icons/facebook-icon.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
