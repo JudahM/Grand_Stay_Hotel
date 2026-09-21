@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +18,14 @@
         </h1>
         <nav class="flex-container nav-menu">
             <ul class="flex-container">
-                <li><a class="nav-option" href="#">HOME</a></li>
-                <li><a class="nav-option" href="#">ROOMS</a></li>
-                <li><a class="nav-option" href="#">OUR STRUCTURE</a></li>
-                <li><a class="nav-option" href="#">EXPERIENCES</a></li>
+                <li><a class="nav-option" href="#">INÍCIO</a></li>
+                <li><a class="nav-option" href="./rooms.html">QUARTOS</a></li>
+                <li><a class="nav-option" href="#">NOSSA ESTRUTURA</a></li>
+                <li><a class="nav-option" href="#">EXPERIÊNCIAS</a></li>
             </ul>
         </nav>
 
-        <a href="./rooms.html" class="btn-primary header action">See Rooms</a>
+        <a href="./rooms.html" class="btn-primary header action">Ver quartos</a>
     </header>
 
 
@@ -33,23 +33,23 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Stay, Differently.</h1>
-                <p>Boutique comfort. Memorable moments. Experience a stay crafted just for you.</p>
-                <span class="image-caption">HOTEL ENTRANCE - GRAND STAY</span>
+                <h1>Hospede-se de um jeito diferente.</h1>
+                <p>Conforto boutique. Momentos memoráveis. Uma estadia feita sob medida para você.</p>
+                <span class="image-caption">ENTRADA DO HOTEL - GRAND STAY</span>
             </div>
 
             <!-- Search Bar Widget -->
             <div class="booking-bar">
                 <form action="#">
                     <div class="input-group">
-                        <label for="checkin">CHECK-IN</label>
+                        <label for="checkin">ENTRADA</label>
                         <input type="date" id="checkin" name="checkin" value="2001-05-01">
                     </div>
                     <div class="input-group">
-                        <label for="checkout">CHECK-OUT</label>
+                        <label for="checkout">SAÍDA</label>
                         <input type="date" id="checkout" name="checkout" value="2001-05-01">
                     </div>
-                    <button type="submit" class="btn-dark">Check Availability</button>
+                    <button type="submit" class="btn-dark">Verificar disponibilidade</button>
                 </form>
             </div>
         </section>
@@ -58,8 +58,8 @@
         <!-- SECTION - Why Choose Us? -->
         <section class="features">
             <div class="section-header">
-                <span class="subtitle">OUR DIFFERENCE</span>
-                <h2>Why Choose Us?</h2>
+                <span class="subtitle">NOSSO DIFERENCIAL</span>
+                <h2>Por que nos escolher?</h2>
             </div>
 
             <!-- Info block 1 -->
@@ -69,12 +69,12 @@
                 </div>
                 <div class="feature-content">
                     <div class="feature-item">
-                        <h3>Prime Locations</h3>
-                        <p>Nestled in the heart of vibrant neighborhoods, our properties place you close to what matters most.</p>
+                        <h3>Localização privilegiada</h3>
+                        <p>No coração de bairros vibrantes, nossas unidades deixam você perto do que mais importa.</p>
                     </div>
                     <div class="feature-item">
-                        <h3>Personalized Stays</h3>
-                        <p>Every detail is curated to your preferences, ensuring a stay that feels uniquely yours.</p>
+                        <h3>Estadias personalizadas</h3>
+                        <p>Cada detalhe é pensado para as suas preferências, garantindo uma experiência verdadeiramente sua.</p>
                     </div>
                 </div>
             </div>
@@ -86,12 +86,12 @@
                 </div>
                 <div class="feature-content">
                     <div class="feature-item">
-                        <h3>Pool & SPA</h3>
-                        <p>Unwind in our serene spa and pool facilities, designed to restore mind, body, and spirit.</p>
+                        <h3>Piscina e SPA</h3>
+                        <p>Relaxe em nossas áreas de spa e piscina, criadas para renovar mente, corpo e espírito.</p>
                     </div>
                     <div class="feature-item">
-                        <h3>Fine Dining</h3>
-                        <p>Savor locally inspired cuisine crafted by our award-winning chefs, paired with carefully selected wines.</p>
+                        <h3>Gastronomia sofisticada</h3>
+                        <p>Saboreie pratos inspirados na culinária local, preparados por chefs premiados e acompanhados de vinhos selecionados.</p>
                     </div>
                 </div>
             </div>
@@ -101,60 +101,64 @@
         <!-- SECTION - Rooms -->
         <section class="rooms">
             <div class="section-header center">
-                <h2>Our Rooms</h2>
-                <p>Designed for Rest. Curated for You.</p>
+                <h2>Nossos quartos</h2>
+                <p>Criados para descansar. Pensados para você.</p>
             </div>
 
             <div class="rooms-carousel">
                 <!-- Left-facing arrow - PREVIOUS -->
-                <button class="carousel-control prev" aria-label="Previous">&larr;</button>
+                <button class="carousel-control prev" type="button" aria-label="Quarto anterior">&larr;</button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
                     <!-- Room Card 01 -->
                     <article class="room-card" style="background-image: url('./images/rooms/room-01.jpg');">
                         <section class="card-header">
-                            <h3>Deluxe Room</h3>
-                            <span class="guests">&bull; 2 guests</span>
+                            <h3>Quarto Deluxe</h3>
+                            <span class="guests">&bull; 2 hóspedes</span>
                         </section>
                         
-                        <p class="card-body">Cozy comfort with modern essentials, warm tones and curated details.</p>
+                        <p class="card-body">Conforto acolhedor, itens modernos, tons quentes e detalhes cuidadosamente pensados.</p>
 
                         <section class="card-footer">
-                            <span class="price"><strong>From $250</strong> / night</span>
-                            <a href="#" class="btn-transparent">View Details</a>
+                            <span class="price"><strong>A partir de $250</strong> / noite</span>
+                            <a href="#" class="btn-transparent">Ver detalhes</a>
                         </section>
                     </article>
 
                     <!-- Room Card 02 -->
                     <article class="room-card" style="background-image: url('./images/rooms/room-02.jpg');">
                         <section class="card-header">
-                            <h3>Deluxe Room</h3>
-                            <span class="guests">&bull; 2 guests</span>
+                            <h3>Quarto Deluxe</h3>
+                            <span class="guests">&bull; 2 hóspedes</span>
                         </section>
                         
-                        <p class="card-body">Cozy comfort with modern essentials, warm tones and curated details.</p>
+                        <p class="card-body">Conforto acolhedor, itens modernos, tons quentes e detalhes cuidadosamente pensados.</p>
 
                         <section class="card-footer">
-                            <span class="price"><strong>From $250</strong> / night</span>
-                            <a href="#" class="btn-transparent">View Details</a>
+                            <span class="price"><strong>A partir de $250</strong> / noite</span>
+                            <a href="#" class="btn-transparent">Ver detalhes</a>
                         </section>
                     </article>
 
                     <!-- Room Card 03 -->
                     <article class="room-card" style="background-image: url('./images/rooms/room-03.jpg');">
                         <section class="card-header">
-                            <h3>Deluxe Room</h3>
-                            <span class="guests">&bull; 2 guests</span>
+                            <h3>Quarto Deluxe</h3>
+                            <span class="guests">&bull; 2 hóspedes</span>
                         </section>
                         
-                        <p class="card-body">Cozy comfort with modern essentials, warm tones and curated details.</p>
+                        <p class="card-body">Conforto acolhedor, itens modernos, tons quentes e detalhes cuidadosamente pensados.</p>
 
                         <section class="card-footer">
-                            <span class="price"><strong>From $250</strong> / night</span>
-                            <a href="#" class="btn-transparent">View Details</a>
+                            <span class="price"><strong>A partir de $250</strong> / noite</span>
+                            <a href="#" class="btn-transparent">Ver detalhes</a>
                         </section>
                     </article>
 
+                    </div>
+                </div>
                 <!-- Right-facing arrow - NEXT -->
-                <button class="carousel-control next" aria-label="Next">&rarr;</button>
+                <button class="carousel-control next" type="button" aria-label="Próximo quarto">&rarr;</button>
             </div>
         </section>
 
@@ -163,23 +167,23 @@
         <section class="testimonial">
             <div class="quote-icon" aria-hidden="true"></div>
             <blockquote>
-                "An exceptional experience from start to finish. The attention to detail, warm hospitality, and beautiful surroundings made it truly unforgettable."
+                "Uma experiência excepcional do início ao fim. A atenção aos detalhes, a hospitalidade acolhedora e os belos arredores tornaram a estadia inesquecível."
             </blockquote>
-            <cite>- Sophia M., New York</cite>
+            <cite>- Sophia M., Nova York</cite>
         </section>
 
         <!-- SECTION - Call To Action (CTA) -->
         <section class="cta">
             <div class="cta-box">
                 <div class="cta-text">
-                    <h2>Ready for Your Grand Stay?</h2>
-                    <p>Reserve now and enjoy exclusive benefits & best rate guarantee.</p>
+                    <h2>Pronto para a sua Grand Stay?</h2>
+                    <p>Reserve agora e aproveite benefícios exclusivos e a garantia da melhor tarifa.</p>
                 </div>
                 <div class="cta-button">
-                    <a href="#" class="btn-light">Reserve Now</a>
+                    <a href="#" class="btn-light">Reservar agora</a>
                 </div>
             </div>
-            <span class="bg-disclaimer">* Background image area</span>
+            <span class="bg-disclaimer">* Área reservada para imagem de fundo</span>
         </section>
     </main>
 
@@ -199,23 +203,23 @@
             <div class="footer-col links">
                 <h4>EXPLORE</h4>
                 <ul>
-                    <li><a href="#">Rooms</a></li>
-                    <li><a href="#">Restaurant</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="#">Our Structure</a></li>
+                    <li><a href="./rooms.html">Quartos</a></li>
+                    <li><a href="#">Restaurante</a></li>
+                    <li><a href="#">Experiências</a></li>
+                    <li><a href="#">Nossa estrutura</a></li>
                 </ul>
             </div>
 
             <!-- Contact Column -->
             <div class="footer-col contact">
-                <h4>CONTACT</h4>
+                <h4>CONTATO</h4>
                 <p>(666) 94242 - 6767</p>
                 <p><a href="mailto:grandstay@gmail.com">grandstay@gmail.com</a></p>
             </div>
 
             <!-- Social Media Column -->
             <div class="footer-col social">
-                <h4>FOLLOW US</h4>
+                <h4>SIGA-NOS</h4>
                 <div class="social-icons">
                     <a href="#" aria-label="LinkedIn">
                         <img src="./assets/icons/linkedin-icon.svg" alt="">
@@ -230,5 +234,6 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/home.js"></script>
 </body>
 </html>

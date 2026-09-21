@@ -1,0 +1,462 @@
+/* ----- Shared page elements ----- */
+.site-header {
+    align-items: center;
+    justify-content: space-between;
+    min-height: 11.2rem;
+    padding: 2.7rem 4.8rem 2.7rem 2.8rem;
+    background: var(--primary-dark-brown);
+    color: var(--light-text);
+}
+.logo-light {
+    font-size: 2.9rem;
+    line-height: 1;
+}
+.logo-light a,
+.nav-option {
+    color: var(--light-text);
+}
+.nav-menu ul {
+    align-items: center;
+    gap: 4rem;
+}
+.nav-option {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+.btn-primary,
+.btn-dark,
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.1rem;
+    padding: 0 2.1rem;
+    border: 0;
+    border-radius: .8rem;
+    cursor: pointer;
+    font: 600 1.6rem 'DM Sans', Arial, sans-serif;
+}
+.btn-primary {
+    background: var(--primary-tan);
+    color: var(--light-text);
+}
+.btn-dark {
+    background: var(--primary-dark-brown);
+    color: var(--light-text);
+}
+.btn-outline {
+    border: .1rem solid var(--primary-dark-brown);
+    border-radius: 0;
+    background: transparent;
+    color: var(--primary-dark-brown);
+}
+.sr-only {
+    position: absolute;
+    width: .1rem;
+    height: .1rem;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+/* ----- Page heading and room search ----- */
+main {
+    padding-bottom: 9.9rem;
+}
+.breadcrumb {
+    display: flex;
+    gap: .6rem;
+    padding: 1.5rem 2.1rem;
+    color: #827468;
+    font: 1.9rem 'Playfair Display', Georgia, serif;
+}
+.page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1rem;
+    padding: .2rem 2rem 3.5rem;
+    text-align: center;
+}
+.page-title h2 {
+    font-size: 4.2rem;
+    line-height: 1.05;
+}
+.page-title p {
+    color: #827468;
+    font: 2rem 'Playfair Display', Georgia, serif;
+}
+.rooms-booking-bar {
+    max-width: 122.5rem;
+    margin: 0 auto 2.9rem;
+    padding: 3.2rem 3.5rem 3rem;
+    border: .1rem solid #d7cec5;
+    background: #fff;
+}
+.rooms-booking-bar form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.input-group label {
+    color: var(--primary-dark-brown);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.input-group input,
+.input-group select,
+.results-header select {
+    width: 14.6rem;
+    height: 4rem;
+    padding: 0 .9rem;
+    border: .1rem solid #ded5cc;
+    border-radius: .8rem;
+    background: #fff;
+    color: var(--primary-dark-brown);
+    font: 1.4rem 'DM Sans', Arial, sans-serif;
+}
+.rooms-booking-bar .btn-dark {
+    min-width: 13.4rem;
+    min-height: 4.8rem;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+/* ----- Filters and results ----- */
+.content-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+    max-width: 122.5rem;
+    margin: 0 auto;
+}
+.sidebar-filters {
+    flex: 0 0 30.6rem;
+    padding: 1.8rem 2.1rem 2.8rem;
+    border: .1rem solid #d7cec5;
+    background: #fff;
+}
+.sidebar-filters h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    padding: 1.2rem 0;
+    border: 0;
+    border-bottom: .1rem solid #ded5cc;
+}
+.filter-group:first-child {
+    padding-top: 0;
+}
+.filter-group legend {
+    padding: 0;
+    color: #685d54;
+    font: 1.5rem 'Playfair Display', Georgia, serif;
+}
+.filter-group label {
+    color: var(--primary-dark-brown);
+    font: 1.5rem 'Playfair Display', Georgia, serif;
+}
+.filter-group input[type='checkbox'] {
+    width: 2.3rem;
+    height: 2.3rem;
+    margin: 0 .6rem 0 0;
+    vertical-align: middle;
+    accent-color: var(--primary-dark-brown);
+}
+.price-filter input[type='range'] {
+    width: 100%;
+    accent-color: var(--primary-dark-brown);
+}
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.6rem;
+    color: #685d54;
+    font: 1.5rem 'Playfair Display', Georgia, serif;
+}
+.sidebar-filters .btn-outline {
+    width: 17.2rem;
+    min-height: 5.6rem;
+    margin: 4rem auto 0;
+    font: 700 1.6rem 'Playfair Display', Georgia, serif;
+}
+.results-container {
+    min-width: 0;
+    flex: 1;
+}
+.results-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 4.2rem;
+}
+.results-header p {
+    color: #827468;
+    font: italic 1.6rem 'Playfair Display', Georgia, serif;
+}
+.results-header select {
+    width: 21.2rem;
+    border-radius: 0;
+    font: 1.5rem 'Playfair Display', Georgia, serif;
+}
+.room-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 1.6rem 1.3rem 2rem;
+    border: .1rem solid #d7cec5;
+    background: #fff;
+}
+.room-list-card {
+    display: flex;
+    align-items: stretch;
+    gap: 2.1rem;
+    min-height: 20.8rem;
+    padding: 1.2rem;
+    border-radius: 1.1rem;
+    background: #fff;
+    box-shadow: 0 .4rem 1.4rem rgba(0, 0, 0, .12);
+}
+.room-list-card > img {
+    width: 27.5rem;
+    min-height: 18.6rem;
+    border-radius: .4rem;
+    object-fit: cover;
+}
+.room-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+    padding: .7rem 0;
+}
+.room-info h3 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+}
+.specs {
+    margin-top: .7rem;
+    color: #827468;
+    font: 1.4rem 'Playfair Display', Georgia, serif;
+}
+.specs span {
+    margin: 0 .9rem;
+    color: var(--primary-dark-brown);
+    font-weight: 700;
+}
+.desc {
+    max-width: 31rem;
+    margin-top: .7rem;
+    color: #8d7d70;
+    font: 1.4rem/1.05 'Playfair Display', Georgia, serif;
+}
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-top: auto;
+}
+.badges li {
+    min-width: 5.7rem;
+    padding: .5rem 1.1rem;
+    border: .1rem solid #d8cec3;
+    color: #827468;
+    font: 1.3rem 'Playfair Display', Georgia, serif;
+    text-align: center;
+}
+.room-pricing {
+    display: flex;
+    flex: 0 0 18.9rem;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.4rem 1.8rem .7rem 0;
+}
+.room-pricing strong {
+    font: italic 700 3rem 'Playfair Display', Georgia, serif;
+    white-space: nowrap;
+}
+.room-pricing .btn-dark {
+    min-width: 17.1rem;
+    min-height: 5.5rem;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-top: 1.3rem;
+}
+.pagination a {
+    min-width: 5.3rem;
+    min-height: 5.6rem;
+    font: 2.3rem 'Playfair Display', Georgia, serif;
+}
+.pagination a:first-child,
+.pagination a:last-child {
+    min-width: 17.2rem;
+}
+.pagination .active {
+    border-radius: 0;
+}
+/* ----- Footer ----- */
+footer {
+    padding: 5.6rem 4.8rem 6rem;
+    background: var(--footer-bg);
+    color: #a99b8a;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 136.8rem;
+    margin: 0 auto;
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+.footer-logo {
+    color: var(--light-text);
+    font-size: 3.8rem;
+    font-style: italic;
+    font-weight: 400;
+}
+.footer-col address,
+.footer-col p,
+.footer-col a {
+    color: #a99b8a;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: 1.4;
+}
+.footer-col h4 {
+    color: var(--light-text);
+    font-size: 1.4rem;
+}
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons img {
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: contain;
+    filter: invert(66%) sepia(14%) saturate(476%) hue-rotate(353deg) brightness(91%) contrast(87%);
+}
+/* ----- Responsive layout ----- */
+@media (max-width: 1000px) {
+    .site-header,
+    .rooms-booking-bar form,
+    .content-layout {
+        flex-wrap: wrap;
+    }
+    .site-header {
+        gap: 2rem;
+    }
+    .nav-menu {
+        order: 3;
+        width: 100%;
+    }
+    .nav-menu ul {
+        justify-content: space-between;
+    }
+    .rooms-booking-bar,
+    .content-layout {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .rooms-booking-bar form {
+        justify-content: flex-start;
+    }
+    .sidebar-filters {
+        flex-basis: 100%;
+    }
+    .sidebar-filters form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .filter-group {
+        flex: 1 1 20rem;
+    }
+    .sidebar-filters .btn-outline {
+        align-self: center;
+        margin: 1rem auto;
+    }
+    .results-container {
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .site-header {
+        padding: 2rem;
+    }
+    .nav-menu ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1.5rem 2.5rem;
+    }
+    .nav-option {
+        font-size: 1.5rem;
+    }
+    .page-title h2 {
+        font-size: 3.3rem;
+    }
+    .room-list-card {
+        flex-direction: column;
+    }
+    .room-list-card > img {
+        width: 100%;
+        height: 22rem;
+    }
+    .room-info {
+        gap: .4rem;
+    }
+    .badges {
+        margin-top: 1.5rem;
+    }
+    .room-pricing {
+        flex-basis: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+    .room-pricing .btn-dark {
+        min-width: auto;
+    }
+    .pagination {
+        gap: .7rem;
+    }
+    .pagination a,
+    .pagination a:first-child,
+    .pagination a:last-child {
+        min-width: auto;
+        padding: 0 1.2rem;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+}
