@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your Perfect Room - Grand Stay</title>
+    
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/rooms.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="flex-container">
+        <h1 class="logo-dark">
+            <a href="index.html" style="color: black;">GRAND STAY</a>
+        </h1>
+        
+        <nav class="flex-container nav-menu">
+            <ul>
+                <li><a class="nav-option" href="index.html" style="color: black;">Home</a></li>
+                <li><a class="nav-option" href="rooms.html" style="color: black;">Rooms</a></li>
+                <li><a class="nav-option" href="#" style="color: black;">Our Structure</a></li>
+                <li><a class="nav-option" href="#" style="color: black;">Experiences</a></li>
+            </ul>
+        </nav>
+        
+        <a href="#" class="btn-dark" style="background-color: #888;">Reserve Now</a>
+    </header>
+
+    <main>
+        <!-- BREADCRUMB (Trilha de navegação) -->
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <p>
+                <a href="index.html">Home</a> / <a href="rooms.html" aria-current="page">Rooms</a>
+            </p>
+        </nav>
+
+        <!-- TÍTULO DA PÁGINA -->
+        <header class="page-title center">
+            <h2>Find your Perfect Room</h2>
+            <p>Explore all the room options, there are plenty</p>
+        </header>
+
+        <!-- BARRA DE BUSCA PRINCIPAL -->
+        <search>
+            <form action="#" class="top-search-bar">
+                <fieldset class="input-group">
+                    <label for="check-in">Check-In</label>
+                    <input type="date" id="check-in" name="check-in">
+                </fieldset>
+
+                <fieldset class="input-group">
+                    <label for="check-out">Check-Out</label>
+                    <input type="date" id="check-out" name="check-out">
+                </fieldset>
+
+                <fieldset class="input-group">
+                    <label for="guests-select">Guests</label>
+                    <select id="guests-select" name="guests">
+                        <option value="2">2 guests</option>
+                        <option value="1">1 guest</option>
+                        <option value="3">3+ guests</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="input-group">
+                    <label for="rooms-select">Rooms</label>
+                    <select id="rooms-select" name="rooms">
+                        <option value="1">1 room</option>
+                        <option value="2">2 rooms</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit" class="btn-dark" >Search</button>
+            </form>
+        </search>
+
+        <!-- LAYOUT PRINCIPAL (Sidebar + Resultados) -->
+        <section class="content-layout">
+            
+            <!-- SIDEBAR: Filtros -->
+            <aside class="sidebar-filters">
+                <header>
+                    <h3>Filter Rooms</h3>
+                </header>
+                
+                <form action="#">
+                    <!-- Preço -->
+                    <fieldset class="filter-group">
+                        <legend>Price range</legend>
+                        <input type="range" min="100" max="1000" step="10" name="price" aria-label="Price range">
+                        <p class="range-labels">
+                            <strong>$100</strong>
+                            <strong>$1000+</strong>
+                        </p>
+                    </fieldset>
+
+                    <!-- Hóspedes -->
+                    <fieldset class="filter-group">
+                        <legend>Guests</legend>
+                        <label><input type="checkbox" name="guest_filter" value="1"> 1 guest</label>
+                        <label><input type="checkbox" name="guest_filter" value="2"> 2 guests</label>
+                        <label><input type="checkbox" name="guest_filter" value="3plus"> 3+ guests</label>
+                    </fieldset>
+
+                    <!-- Tipo de Cama -->
+                    <fieldset class="filter-group">
+                        <legend>Bed type</legend>
+                        <label><input type="checkbox" name="bed_filter" value="king"> King Bed</label>
+                        <label><input type="checkbox" name="bed_filter" value="twin"> Twin Beds</label>
+                    </fieldset>
+
+                    <!-- Comodidades -->
+                    <fieldset class="filter-group">
+                        <legend>Amenities</legend>
+                        <label><input type="checkbox" name="amenity" value="breakfast"> Breakfest included</label>
+                        <label><input type="checkbox" name="amenity" value="beach"> Beach view</label>
+                        <label><input type="checkbox" name="amenity" value="bathtub"> Bathtub</label>
+                        <label><input type="checkbox" name="amenity" value="balcony"> Balcony</label>
+                        <label><input type="checkbox" name="amenity" value="minibar"> Minibar</label>
+                    </fieldset>
+
+                    <button type="reset" class="btn-outline">Clear Filters</button>
+                </form>
+            </aside>
+
+            <!-- CONTEÚDO PRINCIPAL: Lista de Quartos -->
+            <section class="results-container">
+                
+                <!-- Cabeçalho dos resultados -->
+                <header class="results-header">
+                    <p><em>12 rooms available</em></p>
+                    <form action="#">
+                        <label for="sort-by" class="sr-only">Sort By</label>
+                        <select id="sort-by" name="sort">
+                            <option value="recommended">Sort by: Recommended</option>
+                            <option value="price_asc">Price: Low to High</option>
+                            <option value="price_desc">Price: High to Low</option>
+                        </select>
+                    </form>
+                </header>
+
+                <!-- LISTA DE QUARTOS -->
+                <ul class="room-list">
+                    
+                    <!-- QUARTO 1 -->
+                    <li>
+                        <article class="room-list-card">
+                            <img src="https://placehold.co/300x200/999999/999999" alt="Room preview placeholder">
+                            
+                            <section class="room-info">
+                                <header>
+                                    <h3>Room Premium Cruzeiro</h3>
+                                    <p class="specs"><strong>2 guests</strong> | <strong>1 King-sized Bed</strong></p>
+                                </header>
+                                <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, laboriosam saepe? Ipsum dignissimos quibusdam necessitatibus?</p>
+                                <ul class="badges">
+                                    <li>Wi-Fi</li>
+                                    <li>Beach View</li>
+                                    <li>Breakfest</li>
+                                </ul>
+                            </section>
+                            
+                            <section class="room-pricing">
+                                <strong><em>$250/night</em></strong>
+                                <a href="#" class="btn-dark" >View Details</a>
+                            </section>
+                        </article>
+                    </li>
+
+                    <!-- QUARTO 2 -->
+                    <li>
+                        <article class="room-list-card">
+                            <img src="https://placehold.co/300x200/999999/999999" alt="Room preview placeholder">
+                            
+                            <section class="room-info">
+                                <header>
+                                    <h3>Room Mengão</h3>
+                                    <p class="specs"><strong>2 guests</strong> | <strong>1 King-sized Bed</strong></p>
+                                </header>
+                                <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, laboriosam saepe? Ipsum dignissimos quibusdam necessitatibus?</p>
+                                <ul class="badges">
+                                    <li>Wi-Fi</li>
+                                    <li>Beach View</li>
+                                    <li>Breakfest</li>
+                                </ul>
+                            </section>
+                            
+                            <section class="room-pricing">
+                                <strong><em>$250/night</em></strong>
+                                <a href="#" class="btn-dark" >View Details</a>
+                            </section>
+                        </article>
+                    </li>
+
+                    <!-- QUARTO 3 -->
+                    <li>
+                        <article class="room-list-card">
+                            <img src="https://placehold.co/300x200/999999/999999" alt="Room preview placeholder">
+                            
+                            <section class="room-info">
+                                <header>
+                                    <h3>Room Galo</h3>
+                                    <p class="specs"><strong>2 guests</strong> | <strong>1 King-sized Bed</strong></p>
+                                </header>
+                                <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, laboriosam saepe? Ipsum dignissimos quibusdam necessitatibus?</p>
+                                <ul class="badges">
+                                    <li>Wi-Fi</li>
+                                    <li>Beach View</li>
+                                    <li>Breakfest</li>
+                                </ul>
+                            </section>
+                            
+                            <section class="room-pricing">
+                                <strong><em>$250/night</em></strong>
+                                <a href="#" class="btn-dark" >View Details</a>
+                            </section>
+                        </article>
+                    </li>
+
+                </ul>
+
+                <!-- PAGINAÇÃO -->
+                <nav aria-label="Pagination" class="pagination">
+                    <ul>
+                        <li><a href="#" class="btn-outline">Previous</a></li>
+                        <li><a href="#" class="btn-outline"><em>1</em></a></li>
+                        <li><a href="#" class="btn-dark active" aria-current="page" ><em>2</em></a></li>
+                        <li><a href="#" class="btn-outline"><em>3</em></a></li>
+                        <li><a href="#" class="btn-outline">Next</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <section class="footer-container">
+            <!-- Logo & Address -->
+            <address class="footer-col brand">
+                <h2 class="footer-logo">Grand Stay</h2>
+                <p>
+                    123 - feijão com arroz<br>
+                    Teresina, PI
+                </p>
+            </address>
+
+            <!-- Links Column -->
+            <nav class="footer-col links" aria-label="Footer Navigation">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Restaurant</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Our Structure</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contact Column -->
+            <section class="footer-col contact">
+                <h4>Contact</h4>
+                <p>(666) 94242 - 6767</p>
+                <p><a href="mailto:grandstay@gmail.com">grandstay@gmail.com</a></p>
+            </section>
+
+            <!-- Social Media Column -->
+            <section class="footer-col social">
+                <h4>Follow Us</h4>
+                <nav class="social-icons" aria-label="Social Media Links">
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                </nav>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
