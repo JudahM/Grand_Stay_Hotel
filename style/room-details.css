@@ -1,0 +1,277 @@
+/* ----- Room details ----- */
+main {
+    padding-bottom: 6.4rem;
+}
+.breadcrumb {
+    display: flex;
+    gap: .6rem;
+    padding: 1.5rem 2.1rem 5.6rem;
+    color: #685d54;
+    font-size: 1.6rem;
+}
+.room-details-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 70.4rem) minmax(42rem, 53.9rem);
+    align-items: start;
+    gap: 5.2rem;
+    max-width: 131.8rem;
+    margin: 0 auto;
+}
+.room-details-left,
+.room-details-right {
+    display: flex;
+    flex-direction: column;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.main-image {
+    display: block;
+    width: 100%;
+    height: 48.4rem;
+    border-radius: .8rem;
+    object-fit: cover;
+}
+.thumbnail-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+    padding: 0 .5rem;
+}
+.thumbnail {
+    height: 11.3rem;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: .5rem;
+    background: transparent;
+    cursor: pointer;
+}
+.thumbnail.active {
+    outline: .2rem solid var(--primary-tan);
+    outline-offset: .2rem;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-card {
+    min-height: 53.6rem;
+    margin: 3.8rem .5rem 0;
+    padding: 1.5rem 3.4rem;
+    border: .1rem solid var(--primary-dark-brown);
+    border-radius: 1.1rem;
+    background: rgba(255, 255, 255, .45);
+}
+.about-card h2,
+.room-summary h2,
+.reservation-card h2,
+.help-card h2,
+.house-rules h2 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+}
+.about-card > p {
+    margin-top: 1.9rem;
+    color: #685d54;
+    font-size: 1.7rem;
+    line-height: 1.35;
+}
+.amenities-section {
+    margin-top: 1.8rem;
+    padding-top: 2rem;
+    border-top: .1rem solid #d6ccc2;
+}
+.amenities-section h3 {
+    font-size: 2.3rem;
+}
+.amenities-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.6rem 4.4rem;
+    margin-top: 1.4rem;
+}
+.amenities-list li,
+.house-rules li {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    color: #685d54;
+    font-size: 1.7rem;
+}
+.amenity-icon,
+.rule-icon {
+    width: 3.7rem;
+    height: 3.7rem;
+    flex: 0 0 3.7rem;
+    object-fit: contain;
+}
+.room-summary {
+    padding-top: .6rem;
+}
+.room-summary h2 {
+    font-size: 4rem;
+}
+.rating {
+    margin-top: 2.4rem;
+    color: #685d54;
+    font-size: 2.2rem;
+}
+.rating span {
+    color: var(--primary-tan);
+}
+.rating strong {
+    color: var(--primary-dark-brown);
+}
+.room-specs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.3rem;
+    margin-top: 2.2rem;
+}
+.room-specs li {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    color: #685d54;
+    font-size: 1.6rem;
+    white-space: nowrap;
+}
+.spec-icon {
+    flex: 0 0 2.7rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+}
+
+.room-description {
+    max-width: 51.5rem;
+    margin-top: 3.3rem;
+    color: #685d54;
+    font-size: 1.7rem;
+    line-height: 1.35;
+}
+.room-price {
+    margin-top: 2.8rem;
+    color: var(--primary-dark-brown);
+}
+.room-price strong {
+    font: 700 3.8rem 'Playfair Display', Georgia, serif;
+}
+.room-price span {
+    margin-left: 1.2rem;
+    font: italic 2.8rem 'Playfair Display', Georgia, serif;
+}
+.reservation-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3.1rem;
+    padding: 2.8rem 3rem 2.5rem;
+    border: .2rem solid #171413;
+    border-radius: 1.2rem;
+    box-shadow: var(--card-drop-shadow);
+}
+.reservation-card h2 {
+    font-size: 2.4rem;
+}
+.date-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.input-group label {
+    color: #685d54;
+    font-size: 1.5rem;
+}
+.input-group input,
+.input-group select {
+    width: 100%;
+    height: 4rem;
+    padding: 0 1.2rem;
+    border: .1rem solid #d0c3b6;
+    border-radius: .6rem;
+    background: #fff;
+    color: #685d54;
+    font: 1.5rem 'DM Sans', Arial, sans-serif;
+}
+.date-input {
+    position: relative;
+}
+.date-input input {
+    padding-right: 4.6rem;
+}
+.date-input input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+.date-icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.guests-field {
+    margin-top: -.1rem;
+}
+.reservation-card .btn-primary {
+    align-self: center;
+    min-width: 25.9rem;
+    min-height: 6.7rem;
+    margin-top: 1.7rem;
+    font-size: 1.6rem;
+}
+.help-card {
+    margin-top: 5rem;
+    padding: 2rem 2.6rem;
+    border-radius: 1.2rem;
+    background: var(--primary-dark-brown);
+    color: var(--light-text);
+}
+.help-card h2 {
+    font-size: 2.4rem;
+}
+.help-card p {
+    margin-top: .8rem;
+    color: #e4dcd5;
+    font-size: 1.6rem;
+}
+.help-card .btn-primary {
+    min-height: 3.6rem;
+    margin-top: 1.4rem;
+    padding: 0 1.3rem;
+    font-size: 1.5rem;
+}
+.house-rules {
+    margin-top: 3.2rem;
+}
+.house-rules h2 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+.house-rules ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+}
+.no-smoking-icon {
+    transform: scale(1.25);
+}

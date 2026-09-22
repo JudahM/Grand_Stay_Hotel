@@ -1,55 +1,3 @@
-/* ----- Header ----- */
-header {
-    align-items: center;
-    justify-content: space-between;
-    min-height: 11.2rem;
-    padding: 2.7rem 4.8rem 2.7rem 2.8rem;
-    background: var(--primary-dark-brown);
-    color: var(--light-text);
-}
-.logo-light {
-    font-size: 2.9rem;
-    line-height: 1;
-}
-.logo-light a,
-.nav-option {
-    color: var(--light-text);
-}
-.nav-menu ul {
-    align-items: center;
-    gap: 4rem;
-}
-.nav-option {
-    font-size: 1.9rem;
-    font-weight: 500;
-}
-.btn-primary,
-.btn-dark,
-.btn-transparent,
-.btn-light {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 4.1rem;
-    padding: 0 2.1rem;
-    border: 0;
-    border-radius: .8rem;
-    cursor: pointer;
-    font: 600 1.6rem 'DM Sans', Arial, sans-serif;
-}
-.btn-primary,
-.btn-transparent {
-    background: var(--primary-tan);
-    color: var(--light-text);
-}
-.btn-dark {
-    background: var(--primary-dark-brown);
-    color: var(--light-text);
-}
-.btn-light {
-    background: #f8f5f1;
-    color: var(--primary-dark-brown);
-}
 /* ----- Hero ----- */
 .hero {
     position: relative;
@@ -212,13 +160,76 @@ header {
     margin-top: 6.7rem;
     padding: 0 4.3%;
 }
+.carousel-toggle {
+    position: absolute;
+    width: .1rem;
+    height: .1rem;
+    opacity: 0;
+    pointer-events: none;
+}
 .carousel-viewport {
     overflow: hidden;
 }
 .carousel-track {
     display: flex;
     gap: 5.3rem;
-    transition: transform .4s ease;
+}
+#slide-2:checked ~ .carousel-viewport .room-card:nth-child(1) {
+    order: 3;
+}
+#slide-2:checked ~ .carousel-viewport .room-card:nth-child(2) {
+    order: 1;
+}
+#slide-2:checked ~ .carousel-viewport .room-card:nth-child(3) {
+    order: 2;
+}
+#slide-3:checked ~ .carousel-viewport .room-card:nth-child(1) {
+    order: 2;
+}
+#slide-3:checked ~ .carousel-viewport .room-card:nth-child(2) {
+    order: 3;
+}
+#slide-3:checked ~ .carousel-viewport .room-card:nth-child(3) {
+    order: 1;
+}
+#slide-1:checked ~ .carousel-viewport .carousel-track {
+    animation: carousel-change-one .35s ease-out;
+}
+#slide-2:checked ~ .carousel-viewport .carousel-track {
+    animation: carousel-change-two .35s ease-out;
+}
+#slide-3:checked ~ .carousel-viewport .carousel-track {
+    animation: carousel-change-three .35s ease-out;
+}
+@keyframes carousel-change-one {
+    from {
+        opacity: .35;
+        transform: translateX(2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes carousel-change-two {
+    from {
+        opacity: .35;
+        transform: translateX(2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes carousel-change-three {
+    from {
+        opacity: .35;
+        transform: translateX(2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .carousel-control {
     position: absolute;
@@ -231,6 +242,9 @@ header {
     background: #fff;
     box-shadow: var(--card-drop-shadow);
     color: var(--primary-dark-brown);
+    display: none;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-size: 2.8rem;
     line-height: 1;
@@ -242,9 +256,10 @@ header {
 .carousel-control.next {
     right: 1.5%;
 }
-.carousel-control:disabled {
-    cursor: not-allowed;
-    opacity: .45;
+#slide-1:checked ~ .carousel-controls .slide-1,
+#slide-2:checked ~ .carousel-controls .slide-2,
+#slide-3:checked ~ .carousel-controls .slide-3 {
+    display: inline-flex;
 }
 .room-card {
     position: relative;
@@ -378,60 +393,4 @@ blockquote {
     color: #cfbd9e;
     font-size: 1.4rem;
     font-style: italic;
-}
-/* ----- Footer ----- */
-footer {
-    padding: 5.6rem 4.8rem 6rem;
-    background: var(--footer-bg);
-    color: #a99b8a;
-}
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1368px;
-    margin: 0 auto;
-}
-.footer-col {
-    display: flex;
-    flex-direction: column;
-    gap: 2.2rem;
-}
-.footer-logo {
-    color: var(--light-text);
-    font-size: 3.8rem;
-    font-style: italic;
-    font-weight: 400;
-}
-.footer-col address,
-.footer-col p,
-.footer-col a {
-    color: #a99b8a;
-    font-size: 1.8rem;
-    font-style: normal;
-    line-height: 1.4;
-}
-.footer-col h4 {
-    color: var(--light-text);
-    font-size: 1.4rem;
-}
-.footer-col ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-}
-.social-icons {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-.social-icons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-.social-icons img {
-    width: 3.2rem;
-    height: 3.2rem;
-    object-fit: contain;
-    filter: invert(66%) sepia(14%) saturate(476%) hue-rotate(353deg) brightness(91%) contrast(87%);
 }

@@ -1,30 +1,3 @@
-/* ----- Shared page elements ----- */
-.site-header {
-    align-items: center;
-    justify-content: space-between;
-    min-height: 11.2rem;
-    padding: 2.7rem 4.8rem 2.7rem 2.8rem;
-    background: var(--primary-dark-brown);
-    color: var(--light-text);
-}
-.logo-light {
-    font-size: 2.9rem;
-    line-height: 1;
-}
-.logo-light a,
-.nav-option {
-    color: var(--light-text);
-}
-.nav-menu ul {
-    align-items: center;
-    gap: 4rem;
-}
-.nav-option {
-    font-size: 1.9rem;
-    font-weight: 500;
-}
-.btn-primary,
-.btn-dark,
 .btn-outline {
     display: inline-flex;
     align-items: center;
@@ -35,14 +8,6 @@
     border-radius: .8rem;
     cursor: pointer;
     font: 600 1.6rem 'DM Sans', Arial, sans-serif;
-}
-.btn-primary {
-    background: var(--primary-tan);
-    color: var(--light-text);
-}
-.btn-dark {
-    background: var(--primary-dark-brown);
-    color: var(--light-text);
 }
 .btn-outline {
     border: .1rem solid var(--primary-dark-brown);
@@ -308,78 +273,11 @@ main {
 .pagination .active {
     border-radius: 0;
 }
-/* ----- Footer ----- */
-footer {
-    padding: 5.6rem 4.8rem 6rem;
-    background: var(--footer-bg);
-    color: #a99b8a;
-}
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 136.8rem;
-    margin: 0 auto;
-}
-.footer-col {
-    display: flex;
-    flex-direction: column;
-    gap: 2.2rem;
-}
-.footer-logo {
-    color: var(--light-text);
-    font-size: 3.8rem;
-    font-style: italic;
-    font-weight: 400;
-}
-.footer-col address,
-.footer-col p,
-.footer-col a {
-    color: #a99b8a;
-    font-size: 1.8rem;
-    font-style: normal;
-    line-height: 1.4;
-}
-.footer-col h4 {
-    color: var(--light-text);
-    font-size: 1.4rem;
-}
-.footer-col ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-}
-.social-icons {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-.social-icons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-.social-icons img {
-    width: 3.2rem;
-    height: 3.2rem;
-    object-fit: contain;
-    filter: invert(66%) sepia(14%) saturate(476%) hue-rotate(353deg) brightness(91%) contrast(87%);
-}
 /* ----- Responsive layout ----- */
 @media (max-width: 1000px) {
-    .site-header,
     .rooms-booking-bar form,
     .content-layout {
         flex-wrap: wrap;
-    }
-    .site-header {
-        gap: 2rem;
-    }
-    .nav-menu {
-        order: 3;
-        width: 100%;
-    }
-    .nav-menu ul {
-        justify-content: space-between;
     }
     .rooms-booking-bar,
     .content-layout {
@@ -410,17 +308,6 @@ footer {
     }
 }
 @media (max-width: 700px) {
-    .site-header {
-        padding: 2rem;
-    }
-    .nav-menu ul {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 1.5rem 2.5rem;
-    }
-    .nav-option {
-        font-size: 1.5rem;
-    }
     .page-title h2 {
         font-size: 3.3rem;
     }
@@ -454,9 +341,5 @@ footer {
     .pagination a:last-child {
         min-width: auto;
         padding: 0 1.2rem;
-    }
-    .footer-container {
-        flex-wrap: wrap;
-        gap: 4rem;
     }
 }

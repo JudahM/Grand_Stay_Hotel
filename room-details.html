@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarto Deluxe - Grand Stay</title>
+
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/room-details.css">
+</head>
+
+<body>
+    <header class="site-header flex-container">
+        <h1 class="logo-light"><a href="index.html">GRAND STAY</a></h1>
+
+        <nav class="flex-container nav-menu" aria-label="Navegação principal">
+            <ul class="flex-container">
+                <li><a class="nav-option" href="index.html">INÍCIO</a></li>
+                <li><a class="nav-option" href="rooms.html">QUARTOS</a></li>
+                <li><a class="nav-option" href="#">NOSSA ESTRUTURA</a></li>
+                <li><a class="nav-option" href="#">EXPERIÊNCIAS</a></li>
+            </ul>
+        </nav>
+
+        <a href="rooms.html" class="btn-primary header-action">Ver quartos</a>
+    </header>
+
+    <main>
+        <nav aria-label="Navegação estrutural" class="breadcrumb">
+            <a href="index.html">Início</a>
+            <span aria-hidden="true">/</span>
+            <a href="rooms.html">Quartos</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Quarto Deluxe</span>
+        </nav>
+
+        <section class="room-details-layout">
+            <div class="room-details-left">
+                <section class="gallery" aria-label="Galeria do Quarto Deluxe">
+                    <img class="main-image" src="./images/rooms/room-01.jpg" alt="Quarto Deluxe com cama king size">
+
+                    <div class="thumbnail-list">
+                        <button class="thumbnail active" type="button" aria-label="Ver imagem principal do quarto">
+                            <img src="./images/rooms/room-01.jpg" alt="">
+                        </button>
+                        <button class="thumbnail" type="button" aria-label="Ver imagem da suíte">
+                            <img src="./images/rooms/room-02.jpg" alt="">
+                        </button>
+                        <button class="thumbnail" type="button" aria-label="Ver imagem do ambiente do quarto">
+                            <img src="./images/rooms/room-03.jpg" alt="">
+                        </button>
+                        <button class="thumbnail" type="button" aria-label="Ver outra imagem do quarto">
+                            <img src="./images/rooms/room-01.jpg" alt="">
+                        </button>
+                    </div>
+                </section>
+
+                <section class="about-card">
+                    <h2>Sobre este quarto</h2>
+                    <p>Desfrute de uma estadia sofisticada em um ambiente confortável, criado para tornar cada momento especial.</p>
+
+                    <div class="amenities-section">
+                        <h3>Comodidades</h3>
+                        <ul class="amenities-list">
+                            <li><img class="amenity-icon" src="./assets/icons/room-service-icon.svg" alt="">Serviço de quarto</li>
+                            <li><img class="amenity-icon" src="./assets/icons/breakfast-icon.svg" alt="">Café da manhã incluso</li>
+                            <li><img class="amenity-icon" src="./assets/icons/air-conditioner-icon.svg" alt="">Ar-condicionado</li>
+                            <li><img class="amenity-icon" src="./assets/icons/TV-icon.svg" alt="">Smart TV</li>
+                            <li><img class="amenity-icon" src="./assets/icons/wi-fi-icon.svg" alt="">Wi-Fi gratuito</li>
+                            <li><img class="amenity-icon" src="./assets/icons/coffee-cup-icon.svg" alt="">Máquina de café</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="room-details-right">
+                <section class="room-summary">
+                    <h2>Quarto Deluxe</h2>
+                    <p class="rating"><span aria-hidden="true">★</span> <strong>4.8</strong> (500 avaliações)</p>
+
+                    <ul class="room-specs">
+                        <li><img class="spec-icon" src="./assets/icons/profile-icon.svg" alt="">2 hóspedes</li>
+                        <li><img class="spec-icon" src="./assets/icons/king-bed-icon.svg" alt="">Cama king size</li>
+                        <li><img class="spec-icon" src="./assets/icons/room-scale-icon.svg" alt="">32m²</li>
+                    </ul>
+
+                    <p class="room-description">Um quarto espaçoso e acolhedor, com acabamentos elegantes e tudo o que você precisa para relaxar.</p>
+                    <p class="room-price"><strong>$250</strong> <span>/noite</span></p>
+                </section>
+
+                <form class="reservation-card" action="#">
+                    <h2>Reserve este quarto</h2>
+
+                    <div class="date-fields">
+                        <div class="input-group">
+                            <label for="detail-check-in">ENTRADA</label>
+                            <div class="date-input">
+                                <input type="date" id="detail-check-in" name="check-in" value="2001-05-01">
+                                <img class="date-icon" src="./assets/icons/calendar.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="detail-check-out">SAÍDA</label>
+                            <div class="date-input">
+                                <input type="date" id="detail-check-out" name="check-out" value="2001-05-01">
+                                <img class="date-icon" src="./assets/icons/calendar.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group guests-field">
+                        <label for="detail-guests">HÓSPEDES</label>
+                        <select id="detail-guests" name="guests">
+                            <option value="2">2 hóspedes</option>
+                            <option value="1">1 hóspede</option>
+                            <option value="3">3+ hóspedes</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Reservar este quarto</button>
+                </form>
+
+                <section class="help-card">
+                    <h2>Precisa de ajuda?</h2>
+                    <p>Nossa equipe está pronta para ajudar no que for preciso.</p>
+                    <a href="mailto:grandstay@gmail.com" class="btn-primary">Fale com a equipe</a>
+                </section>
+
+                <section class="house-rules">
+                    <h2>Regras da casa</h2>
+                    <ul>
+                        <li><img class="rule-icon" src="./assets/icons/check-in-icon.svg" alt="">Check-in no horário</li>
+                        <li><img class="rule-icon no-smoking-icon" src="./assets/icons/no-smoking-2.svg" alt="">Não é permitido fumar</li>
+                        <li><img class="rule-icon" src="./assets/icons/no-pets.svg" alt="">Animais não permitidos</li>
+                    </ul>
+                </section>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <h2 class="footer-logo">Grand Stay</h2>
+                <address>123 - Feijão com arroz<br>Teresina, PI</address>
+            </div>
+
+            <nav class="footer-col links" aria-label="Navegação do rodapé">
+                <h4>EXPLORE</h4>
+                <ul>
+                    <li><a href="rooms.html">Quartos</a></li>
+                    <li><a href="#">Restaurante</a></li>
+                    <li><a href="#">Experiências</a></li>
+                    <li><a href="#">Nossa estrutura</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-col contact">
+                <h4>CONTATO</h4>
+                <p>(666) 94242 - 6767</p>
+                <p><a href="mailto:grandstay@gmail.com">grandstay@gmail.com</a></p>
+            </section>
+
+            <section class="footer-col social">
+                <h4>SIGA-NOS</h4>
+                <nav class="social-icons" aria-label="Redes sociais">
+                    <a href="#" aria-label="LinkedIn"><img src="./assets/icons/linkedin-icon.svg" alt=""></a>
+                    <a href="#" aria-label="Instagram"><img src="./assets/icons/instagram-icon.svg" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="./assets/icons/facebook-icon.svg" alt=""></a>
+                </nav>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

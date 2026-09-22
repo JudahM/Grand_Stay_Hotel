@@ -12,7 +12,7 @@
 
 
 <body>
-    <header class="flex-container">
+    <header class="site-header flex-container">
         <h1 class="logo-light">
             <a href="#">GRAND STAY</a>
         </h1>
@@ -106,8 +106,10 @@
             </div>
 
             <div class="rooms-carousel">
-                <!-- Left-facing arrow - PREVIOUS -->
-                <button class="carousel-control prev" type="button" aria-label="Quarto anterior">&larr;</button>
+                <input class="carousel-toggle" type="radio" name="room-carousel" id="slide-1" checked>
+                <input class="carousel-toggle" type="radio" name="room-carousel" id="slide-2">
+                <input class="carousel-toggle" type="radio" name="room-carousel" id="slide-3">
+
                 <div class="carousel-viewport">
                     <div class="carousel-track">
                     <!-- Room Card 01 -->
@@ -121,7 +123,7 @@
 
                         <section class="card-footer">
                             <span class="price"><strong>A partir de $250</strong> / noite</span>
-                            <a href="#" class="btn-transparent">Ver detalhes</a>
+                            <a href="./room-details.html" class="btn-transparent">Ver detalhes</a>
                         </section>
                     </article>
 
@@ -136,7 +138,7 @@
 
                         <section class="card-footer">
                             <span class="price"><strong>A partir de $250</strong> / noite</span>
-                            <a href="#" class="btn-transparent">Ver detalhes</a>
+                            <a href="./room-details.html" class="btn-transparent">Ver detalhes</a>
                         </section>
                     </article>
 
@@ -151,14 +153,21 @@
 
                         <section class="card-footer">
                             <span class="price"><strong>A partir de $250</strong> / noite</span>
-                            <a href="#" class="btn-transparent">Ver detalhes</a>
+                            <a href="./room-details.html" class="btn-transparent">Ver detalhes</a>
                         </section>
                     </article>
 
                     </div>
                 </div>
-                <!-- Right-facing arrow - NEXT -->
-                <button class="carousel-control next" type="button" aria-label="Próximo quarto">&rarr;</button>
+
+                <div class="carousel-controls">
+                    <label class="carousel-control prev slide-1" for="slide-3" aria-label="Quarto anterior">&larr;</label>
+                    <label class="carousel-control next slide-1" for="slide-2" aria-label="Próximo quarto">&rarr;</label>
+                    <label class="carousel-control prev slide-2" for="slide-1" aria-label="Quarto anterior">&larr;</label>
+                    <label class="carousel-control next slide-2" for="slide-3" aria-label="Próximo quarto">&rarr;</label>
+                    <label class="carousel-control prev slide-3" for="slide-2" aria-label="Quarto anterior">&larr;</label>
+                    <label class="carousel-control next slide-3" for="slide-1" aria-label="Próximo quarto">&rarr;</label>
+                </div>
             </div>
         </section>
 
@@ -234,6 +243,5 @@
             </div>
         </div>
     </footer>
-    <script src="./scripts/home.js"></script>
 </body>
 </html>

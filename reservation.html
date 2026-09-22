@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar reserva - Grand Stay</title>
+
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/reservation.css">
+</head>
+
+<body>
+    <header class="site-header flex-container">
+        <h1 class="logo-light"><a href="index.html">GRAND STAY</a></h1>
+
+        <nav class="flex-container nav-menu" aria-label="Navegação principal">
+            <ul class="flex-container">
+                <li><a class="nav-option" href="index.html">INÍCIO</a></li>
+                <li><a class="nav-option" href="rooms.html">QUARTOS</a></li>
+                <li><a class="nav-option" href="#">NOSSA ESTRUTURA</a></li>
+                <li><a class="nav-option" href="#">EXPERIÊNCIAS</a></li>
+            </ul>
+        </nav>
+
+        <a href="rooms.html" class="btn-primary header-action">Ver quartos</a>
+    </header>
+
+    <main>
+        <section class="reservation-page">
+            <header class="reservation-header">
+                <h2>Finalize sua reserva</h2>
+
+                <ol class="reservation-steps" aria-label="Etapas da reserva">
+                    <li class="completed"><span>1</span><p>Detalhes da estadia</p></li>
+                    <li class="current" aria-current="step"><span>2</span><p>Dados do hóspede</p></li>
+                    <li><span>3</span><p>Confirmação</p></li>
+                </ol>
+            </header>
+
+            <form class="reservation-form" action="#">
+                <div class="reservation-content">
+                    <div class="form-sections">
+                        <section class="form-card guest-details">
+                            <header><h3>Dados do hóspede</h3></header>
+
+                            <div class="form-grid">
+                                <div class="input-group">
+                                    <label for="first-name">Nome</label>
+                                    <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="last-name">Sobrenome</label>
+                                    <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="email" autocomplete="email" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="phone">Telefone</label>
+                                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="form-card payment-details">
+                            <header><h3>Dados de pagamento</h3></header>
+
+                            <div class="form-grid">
+                                <div class="input-group">
+                                    <label for="card-number">Número do cartão</label>
+                                    <input type="text" id="card-number" name="card-number" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 4321 9876" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="card-name">Nome no cartão</label>
+                                    <input type="text" id="card-name" name="card-name" autocomplete="cc-name" placeholder="NOME COMO ESTÁ NO CARTÃO" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="card-expiry">Validade</label>
+                                    <input type="text" id="card-expiry" name="card-expiry" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/AA" required>
+                                </div>
+
+                                <div class="input-group cvc-field">
+                                    <label for="card-cvc">CVC</label>
+                                    <input type="text" id="card-cvc" name="card-cvc" inputmode="numeric" autocomplete="cc-csc" placeholder="000" required>
+                                    <span class="field-help" aria-label="Código de segurança de três dígitos">?</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="reservation-summary" aria-label="Resumo da reserva">
+                        <header><h3>Confira suas informações</h3></header>
+
+                        <article class="selected-room">
+                            <img src="./images/rooms/room-01.jpg" alt="Quarto Deluxe com cama king size">
+                            <div>
+                                <h4>Quarto Deluxe</h4>
+                                <p>2 hóspedes · 1 cama king size</p>
+                            </div>
+                        </article>
+
+                        <section class="stay-summary">
+                            <dl>
+                                <div><dt>Entrada</dt><dd>08/09/2026</dd></div>
+                                <div><dt>Saída</dt><dd>12/09/2026</dd></div>
+                            </dl>
+                            <p><em>4 noites</em></p>
+                        </section>
+
+                        <section class="price-summary">
+                            <dl>
+                                <div><dt>Diárias</dt><dd>3 × $250: <strong>$750</strong></dd></div>
+                                <div><dt>Taxas e tarifas</dt><dd><strong>$100</strong></dd></div>
+                            </dl>
+                            <p>Total: <strong>$850</strong></p>
+                        </section>
+
+                        <p class="secure-payment">Pagamento protegido e seguro</p>
+                    </aside>
+                </div>
+
+                <label class="terms-agreement">
+                    <input type="checkbox" name="terms" required>
+                    <span>Concordo com os <a href="#">Termos e condições</a> e as <a href="#">Regras do hotel</a>.</span>
+                </label>
+
+                <button type="submit" class="confirm-button">Confirmar reserva</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <h2 class="footer-logo">Grand Stay</h2>
+                <address>123 - Feijão com arroz<br>Teresina, PI</address>
+            </div>
+
+            <nav class="footer-col links" aria-label="Navegação do rodapé">
+                <h4>EXPLORE</h4>
+                <ul>
+                    <li><a href="rooms.html">Quartos</a></li>
+                    <li><a href="#">Restaurante</a></li>
+                    <li><a href="#">Experiências</a></li>
+                    <li><a href="#">Nossa estrutura</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-col contact">
+                <h4>CONTATO</h4>
+                <p>(666) 94242 - 6767</p>
+                <p><a href="mailto:grandstay@gmail.com">grandstay@gmail.com</a></p>
+            </section>
+
+            <section class="footer-col social">
+                <h4>SIGA-NOS</h4>
+                <nav class="social-icons" aria-label="Redes sociais">
+                    <a href="#" aria-label="LinkedIn"><img src="./assets/icons/linkedin-icon.svg" alt=""></a>
+                    <a href="#" aria-label="Instagram"><img src="./assets/icons/instagram-icon.svg" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="./assets/icons/facebook-icon.svg" alt=""></a>
+                </nav>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
