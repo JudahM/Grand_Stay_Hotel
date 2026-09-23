@@ -6,7 +6,7 @@
     min-height: 45.4rem;
     padding: 6rem 8rem;
     color: var(--light-text);
-    background: linear-gradient(90deg, rgba(0, 0, 0, .34), rgba(0, 0, 0, .12)), url('../images/home/hotel_entrance_hall.jpg') center 53% / cover no-repeat;
+    background: var(--hero-overlay), url('../images/home/hotel_entrance_hall.jpg') center 53% / cover no-repeat;
 }
 .hero-content {
     width: 50rem;
@@ -39,13 +39,11 @@
     gap: 2.4rem;
     min-width: 61.7rem;
     padding: 3.6rem 2.1rem 3.5rem;
-    background: #fff;
+    background: var(--surface);
     border-radius: 1.2rem;
     box-shadow: var(--card-drop-shadow);
 }
 .input-group {
-    display: flex;
-    flex-direction: column;
     gap: .4rem;
 }
 .input-group label {
@@ -57,10 +55,10 @@
     width: 14.6rem;
     height: 4rem;
     padding: 0 .9rem;
-    border: .1rem solid #ded5cc;
+    border: .1rem solid var(--border-color);
     border-radius: .8rem;
     color: var(--primary-dark-brown);
-    font: 1.4rem 'DM Sans', Arial, sans-serif;
+    font: 1.4rem var(--font-sans);
 }
 .booking-bar .btn-dark {
     min-width: 23.5rem;
@@ -140,7 +138,7 @@
 .rooms {
     overflow: hidden;
     padding: 6.6rem 0 3.8rem;
-    background: #f5f0eb;
+    background: var(--bg-light);
 }
 .section-header.center {
     align-items: center;
@@ -153,7 +151,7 @@
     font-size: 4.5rem;
 }
 .rooms .section-header p {
-    font: 3rem 'Playfair Display', Georgia, serif;
+    font: 3rem var(--font-serif);
 }
 .rooms-carousel {
     position: relative;
@@ -239,7 +237,7 @@
     height: 4.8rem;
     border: 0;
     border-radius: 50%;
-    background: #fff;
+    background: var(--surface);
     box-shadow: var(--card-drop-shadow);
     color: var(--primary-dark-brown);
     display: none;
@@ -264,13 +262,13 @@
 .room-card {
     position: relative;
     display: flex;
-    flex: 0 0 min(56.4rem, 100%);
+    flex: 0 0 56.4rem;
     height: 25rem;
     flex-direction: column;
     justify-content: space-between;
     padding: 1.7rem 2rem 1.3rem;
     overflow: hidden;
-    border: .7rem solid #fff;
+    border: .7rem solid var(--surface);
     border-radius: 1.7rem;
     box-shadow: var(--card-drop-shadow);
     color: var(--light-text);
@@ -282,7 +280,7 @@
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: rgba(0, 0, 0, .48);
+    background: var(--image-overlay);
     content: '';
 }
 .room-card > * {
@@ -304,21 +302,21 @@
     gap: .8rem;
 }
 .guests {
-    color: #c6b5a3;
+    color: var(--surface-tint);
     font-size: 1.5rem;
     font-weight: 600;
 }
 .card-body {
     align-self: flex-end;
     width: 23rem;
-    color: #c6b5a3;
+    color: var(--surface-tint);
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.15;
     text-align: right;
 }
 .price {
-    font: italic 700 2.5rem 'Playfair Display', Georgia, serif;
+    font: italic 700 2.5rem var(--font-serif);
 }
 .btn-transparent {
     min-height: 3.6rem;
@@ -337,8 +335,8 @@
 }
 .quote-icon {
     height: 3.2rem;
-    color: #cdbb99;
-    font: 7rem/1 'Playfair Display', Georgia, serif;
+    color: var(--primary-tan);
+    font: 7rem/1 var(--font-serif);
 }
 .quote-icon::after {
     content: '”';
@@ -348,7 +346,7 @@
 }
 blockquote {
     max-width: 76rem;
-    font: italic 2.8rem/1.13 'Playfair Display', Georgia, serif;
+    font: italic 2.8rem/1.13 var(--font-serif);
 }
 .testimonial cite {
     margin-top: .5rem;
@@ -378,7 +376,7 @@ blockquote {
 }
 .cta-text p {
     margin-top: 1.1rem;
-    color: #d2c9c0;
+    color: var(--surface-tint);
     font-size: 1.8rem;
 }
 .cta-button .btn-light {
@@ -390,7 +388,7 @@ blockquote {
     display: block;
     max-width: 1172px;
     margin: 2rem auto 0;
-    color: #cfbd9e;
+    color: var(--accent);
     font-size: 1.4rem;
     font-style: italic;
 }

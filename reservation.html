@@ -17,8 +17,8 @@
             <ul class="flex-container">
                 <li><a class="nav-option" href="index.html">INÍCIO</a></li>
                 <li><a class="nav-option" href="rooms.html">QUARTOS</a></li>
-                <li><a class="nav-option" href="#">NOSSA ESTRUTURA</a></li>
-                <li><a class="nav-option" href="#">EXPERIÊNCIAS</a></li>
+                <li><a class="nav-option" href="our-structure.html">NOSSA ESTRUTURA</a></li>
+                <li><a class="nav-option" href="experiences.html">EXPERIÊNCIAS</a></li>
             </ul>
         </nav>
 
@@ -37,7 +37,7 @@
                 </ol>
             </header>
 
-            <form class="reservation-form" action="#">
+            <form class="reservation-form" action="confirmation.html">
                 <div class="reservation-content">
                     <div class="form-sections">
                         <section class="form-card guest-details">
@@ -46,22 +46,22 @@
                             <div class="form-grid">
                                 <div class="input-group">
                                     <label for="first-name">Nome</label>
-                                    <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+                                    <input type="text" id="first-name" name="first-name" autocomplete="given-name" placeholder="Seu nome" required>
                                 </div>
 
                                 <div class="input-group">
                                     <label for="last-name">Sobrenome</label>
-                                    <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+                                    <input type="text" id="last-name" name="last-name" autocomplete="family-name" placeholder="Seu sobrenome" required>
                                 </div>
 
                                 <div class="input-group">
                                     <label for="email">E-mail</label>
-                                    <input type="email" id="email" name="email" autocomplete="email" required>
+                                    <input type="email" id="email" name="email" autocomplete="email" placeholder="nome@exemplo.com" required>
                                 </div>
 
                                 <div class="input-group">
                                     <label for="phone">Telefone</label>
-                                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                                    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(00) 00000-0000" required>
                                 </div>
                             </div>
                         </section>
@@ -121,16 +121,16 @@
                             <p>Total: <strong>$850</strong></p>
                         </section>
 
-                        <p class="secure-payment">Pagamento protegido e seguro</p>
+                        <p class="secure-payment"><span class="secure-payment-icon" aria-hidden="true"></span>Pagamento protegido e seguro</p>
                     </aside>
                 </div>
 
                 <label class="terms-agreement">
                     <input type="checkbox" name="terms" required>
-                    <span>Concordo com os <a href="#">Termos e condições</a> e as <a href="#">Regras do hotel</a>.</span>
+                    <span>Concordo com os <a href="terms-and-conditions.html">Termos e condições</a> e as <a href="hotel-rules.html">Regras do hotel</a>.</span>
                 </label>
 
-                <button type="submit" class="confirm-button">Confirmar reserva</button>
+                <button type="submit" class="btn-primary confirm-button">Confirmar reserva</button>
             </form>
         </section>
     </main>
@@ -146,9 +146,9 @@
                 <h4>EXPLORE</h4>
                 <ul>
                     <li><a href="rooms.html">Quartos</a></li>
-                    <li><a href="#">Restaurante</a></li>
-                    <li><a href="#">Experiências</a></li>
-                    <li><a href="#">Nossa estrutura</a></li>
+                    <li><a href="restaurant.html">Restaurante</a></li>
+                    <li><a href="experiences.html">Experiências</a></li>
+                    <li><a href="our-structure.html">Nossa estrutura</a></li>
                 </ul>
             </nav>
 

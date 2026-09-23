@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação da reserva - Grand Stay</title>
+
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/confirmation.css">
+</head>
+<body>
+    <header class="site-header flex-container">
+        <h1 class="logo-light"><a href="index.html">GRAND STAY</a></h1>
+
+        <nav class="flex-container nav-menu" aria-label="Navegação principal">
+            <ul class="flex-container">
+                <li><a class="nav-option" href="index.html">INÍCIO</a></li>
+                <li><a class="nav-option" href="rooms.html">QUARTOS</a></li>
+                <li><a class="nav-option" href="our-structure.html">NOSSA ESTRUTURA</a></li>
+                <li><a class="nav-option" href="experiences.html">EXPERIÊNCIAS</a></li>
+            </ul>
+        </nav>
+
+        <a href="rooms.html" class="btn-primary header-action">Ver quartos</a>
+    </header>
+
+    <main class="confirmation-main">
+        <section class="confirmation-page" aria-labelledby="confirmation-title">
+            <ol class="confirmation-steps" aria-label="Etapas da reserva">
+                <li><span>1</span><p>Detalhes da estadia</p></li>
+                <li><span>2</span><p>Dados do hóspede</p></li>
+                <li aria-current="step"><span>3</span><p>Confirmação</p></li>
+            </ol>
+
+            <span class="confirmation-icon" aria-hidden="true"></span>
+            <h2 id="confirmation-title">Sua reserva está confirmada!</h2>
+        </section>
+
+        <section class="confirmation-content" aria-label="Informações da reserva confirmada">
+            <section class="reservation-overview surface-card" aria-labelledby="stay-title">
+                <h2 id="stay-title">Sua Grand Stay está esperando por você</h2>
+
+                <article class="confirmed-room">
+                    <img src="./images/rooms/room-01.jpg" alt="Quarto Deluxe com cama king size">
+                    <div>
+                        <h3>Quarto Deluxe</h3>
+                        <p>2 hóspedes</p>
+                        <p><strong>$840 no total</strong></p>
+                    </div>
+                </article>
+
+                <ul class="confirmed-stay-details">
+                    <li><img src="./assets/icons/calendar.svg" alt="">Check-in: 8 de setembro de 2026 — a partir das 15h</li>
+                    <li><img src="./assets/icons/calendar.svg" alt="">Check-out: 12 de setembro de 2026 — até as 11h</li>
+                    <li><span class="stay-detail-icon" aria-hidden="true">☾</span>3 noites</li>
+                    <li><span class="stay-detail-icon" aria-hidden="true">⌖</span>Av. Nem Vem Que Não Tem, 123 — Horto</li>
+                </ul>
+
+                <div class="confirmation-actions">
+                    <a href="room-details.html" class="btn-outline">Ver reserva</a>
+                    <button type="button" class="btn-primary">Baixar confirmação</button>
+                </div>
+            </section>
+
+            <aside class="confirmation-sidebar">
+                <section class="next-steps surface-card" aria-labelledby="next-steps-title">
+                    <h2 id="next-steps-title">O que acontece agora?</h2>
+
+                    <ol>
+                        <li>
+                            <span>1</span>
+                            <p>Confira seu e-mail. Enviamos a confirmação da sua reserva.</p>
+                        </li>
+                        <li>
+                            <span>2</span>
+                            <p>Planeje sua estadia. Fale conosco para saber mais sobre restaurantes e outras experiências.</p>
+                        </li>
+                        <li>
+                            <span>3</span>
+                            <p>Faça seu check-in. Esperamos receber você em breve!</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="confirmation-help" aria-labelledby="help-title">
+                    <h2 id="help-title">Precisa de ajuda?</h2>
+                    <span class="help-desk-icon" aria-hidden="true"></span>
+                    <div class="help-content">
+                        <h3>Fale com a nossa equipe</h3>
+                        <p>Estamos prontos para ajudar. Entre em contato por telefone ou e-mail.</p>
+                        <a href="mailto:grandstay@gmail.com" class="btn-primary">Fale conosco</a>
+                    </div>
+                </section>
+            </aside>
+        </section>
+
+        <section class="stay-enhancement" aria-labelledby="enhancement-title">
+            <span class="desk-bell-icon" aria-hidden="true"></span>
+            <div>
+                <h2 id="enhancement-title">Aprimore sua estadia</h2>
+                <p>Conheça nossas ofertas especiais e torne sua estadia ainda mais memorável.</p>
+            </div>
+            <a href="experiences.html" class="btn-primary">Explorar</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <h2 class="footer-logo">Grand Stay</h2>
+                <address>123 - Feijão com arroz<br>Teresina, PI</address>
+            </div>
+
+            <nav class="footer-col links" aria-label="Navegação do rodapé">
+                <h4>EXPLORE</h4>
+                <ul>
+                    <li><a href="rooms.html">Quartos</a></li>
+                    <li><a href="restaurant.html">Restaurante</a></li>
+                    <li><a href="experiences.html">Experiências</a></li>
+                    <li><a href="our-structure.html">Nossa estrutura</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-col contact">
+                <h4>CONTATO</h4>
+                <p>(666) 94242 - 6767</p>
+                <p><a href="mailto:grandstay@gmail.com">grandstay@gmail.com</a></p>
+            </section>
+
+            <section class="footer-col social">
+                <h4>SIGA-NOS</h4>
+                <nav class="social-icons" aria-label="Redes sociais">
+                    <a href="#" aria-label="LinkedIn"><img src="./assets/icons/linkedin-icon.svg" alt=""></a>
+                    <a href="#" aria-label="Instagram"><img src="./assets/icons/instagram-icon.svg" alt=""></a>
+                    <a href="#" aria-label="Facebook"><img src="./assets/icons/facebook-icon.svg" alt=""></a>
+                </nav>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
