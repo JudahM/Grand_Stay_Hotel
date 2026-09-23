@@ -124,11 +124,11 @@ main {
 .filter-group legend {
     padding: 0;
     color: #685d54;
-    font: 1.5rem 'Playfair Display', Georgia, serif;
+    font: 600 1.5rem 'DM Sans', Arial, sans-serif;
 }
 .filter-group label {
     color: var(--primary-dark-brown);
-    font: 1.5rem 'Playfair Display', Georgia, serif;
+    font: 1.5rem 'DM Sans', Arial, sans-serif;
 }
 .filter-group input[type='checkbox'] {
     width: 2.3rem;
@@ -146,7 +146,7 @@ main {
     justify-content: space-between;
     padding: 0 2.6rem;
     color: #685d54;
-    font: 1.5rem 'Playfair Display', Georgia, serif;
+    font: 1.5rem 'DM Sans', Arial, sans-serif;
 }
 .sidebar-filters .btn-outline {
     width: 17.2rem;
@@ -166,12 +166,12 @@ main {
 }
 .results-header p {
     color: #827468;
-    font: italic 1.6rem 'Playfair Display', Georgia, serif;
+    font: italic 1.6rem 'DM Sans', Arial, sans-serif;
 }
 .results-header select {
     width: 21.2rem;
     border-radius: 0;
-    font: 1.5rem 'Playfair Display', Georgia, serif;
+    font: 1.5rem 'DM Sans', Arial, sans-serif;
 }
 .room-list {
     display: flex;
@@ -211,7 +211,7 @@ main {
 .specs {
     margin-top: .7rem;
     color: #827468;
-    font: 1.4rem 'Playfair Display', Georgia, serif;
+    font: 1.4rem 'DM Sans', Arial, sans-serif;
 }
 .specs span {
     margin: 0 .9rem;
@@ -222,7 +222,7 @@ main {
     max-width: 31rem;
     margin-top: .7rem;
     color: #8d7d70;
-    font: 1.4rem/1.05 'Playfair Display', Georgia, serif;
+    font: 1.4rem/1.35 'DM Sans', Arial, sans-serif;
 }
 .badges {
     display: flex;
@@ -235,7 +235,7 @@ main {
     padding: .5rem 1.1rem;
     border: .1rem solid #d8cec3;
     color: #827468;
-    font: 1.3rem 'Playfair Display', Georgia, serif;
+    font: 1.3rem 'DM Sans', Arial, sans-serif;
     text-align: center;
 }
 .room-pricing {
