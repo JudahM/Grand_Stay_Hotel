@@ -6,6 +6,7 @@
     <title>Experiências - Grand Stay</title>
 
     <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/experiences.css">
 </head>
 <body>
     <header class="site-header flex-container">
@@ -23,7 +24,146 @@
         <a href="rooms.html" class="btn-primary header-action">Ver quartos</a>
     </header>
 
-    <main></main>
+    <main class="experiences-main">
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+            <a href="index.html">Início</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Experiências</span>
+        </nav>
+
+        <header class="experiences-page-header">
+            <h2>Torne sua estadia inesquecível</h2>
+            <p>Experiências selecionadas, das tradições locais ao bem-estar, para tornar sua estadia extraordinária.</p>
+        </header>
+
+        <section class="featured-experience surface-card" aria-labelledby="featured-title">
+            <img class="featured-experience-image" alt="Área de piscina do hotel ao pôr do sol">
+
+            <div class="featured-experience-content">
+                <p class="experience-category">EXPERIÊNCIA EM DESTAQUE</p>
+                <h2 id="featured-title">Jantar ao pôr do sol no rooftop</h2>
+                <p class="experience-description">Saboreie um menu de vários pratos com vista panorâmica enquanto o sol se põe sobre a cidade.</p>
+
+                <dl class="experience-summary">
+                    <div><dt>Duração</dt><dd>2 horas</dd></div>
+                    <div><dt>Valor</dt><dd>A partir de $180</dd></div>
+                </dl>
+
+                <a href="reservation.html" class="btn-primary">Reservar experiência</a>
+            </div>
+        </section>
+
+        <section class="experiences-catalog" aria-labelledby="catalog-title">
+            <h2 id="catalog-title">Descubra experiências</h2>
+
+            <div class="catalog-controls">
+                <nav class="experience-filters" aria-label="Filtrar experiências">
+                    <button type="button" class="btn-dark" aria-pressed="true">Todas</button>
+                    <button type="button" class="btn-outline" aria-pressed="false">Gastronomia</button>
+                    <button type="button" class="btn-outline" aria-pressed="false">Bem-estar</button>
+                    <button type="button" class="btn-outline" aria-pressed="false">Cultura</button>
+                    <button type="button" class="btn-outline" aria-pressed="false">Aventura</button>
+                    <button type="button" class="btn-outline" aria-pressed="false">Para casais</button>
+                    <button type="button" class="btn-outline" aria-pressed="false">Para famílias</button>
+                </nav>
+
+                <label class="sr-only" for="sort-experiences">Ordenar experiências</label>
+                <select id="sort-experiences" name="sort-experiences">
+                    <option value="recommended">Ordenar por: recomendadas</option>
+                    <option value="price-low">Menor preço</option>
+                    <option value="price-high">Maior preço</option>
+                </select>
+            </div>
+
+            <div class="experiences-grid">
+                <article class="experience-card surface-card">
+                    <img class="experience-card-image" alt="Taças de vinho em uma degustação">
+                    <div class="experience-card-content">
+                        <p class="experience-category">GASTRONOMIA</p>
+                        <h3>Degustação de vinhos</h3>
+                        <p>Prove vinhos locais excepcionais com a orientação de nosso sommelier.</p>
+                        <p class="experience-details">90 min · Grupos pequenos de até 8 pessoas</p>
+                        <div class="experience-card-footer">
+                            <strong>A partir de $65</strong>
+                            <a href="reservation.html" class="btn-outline">Ver detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card surface-card">
+                    <img class="experience-card-image" alt="Massagem durante um ritual de spa">
+                    <div class="experience-card-content">
+                        <p class="experience-category">BEM-ESTAR</p>
+                        <h3>Ritual de spa exclusivo</h3>
+                        <p>Revigore-se com um tratamento personalizado inspirado nas tradições locais.</p>
+                        <p class="experience-details">60 min · Até 2 hóspedes</p>
+                        <div class="experience-card-footer">
+                            <strong>A partir de $120</strong>
+                            <a href="reservation.html" class="btn-outline">Ver detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card surface-card">
+                    <img class="experience-card-image" alt="Grupo durante um passeio cultural pela cidade">
+                    <div class="experience-card-content">
+                        <p class="experience-category">CULTURA</p>
+                        <h3>Passeio guiado pela cidade</h3>
+                        <p>Explore a história da cidade com um guia local especializado.</p>
+                        <p class="experience-details">3 horas · Grupo pequeno de até 6 pessoas</p>
+                        <div class="experience-card-footer">
+                            <strong>A partir de $95</strong>
+                            <a href="reservation.html" class="btn-outline">Ver detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card surface-card">
+                    <img class="experience-card-image" alt="Jantar ao pôr do sol com vista panorâmica">
+                    <div class="experience-card-content">
+                        <p class="experience-category">GASTRONOMIA</p>
+                        <h3>Jantar ao pôr do sol no rooftop</h3>
+                        <p>Uma experiência gastronômica inesquecível com vistas de tirar o fôlego.</p>
+                        <p class="experience-details">2 horas · Até 4 hóspedes</p>
+                        <div class="experience-card-footer">
+                            <strong>A partir de $180</strong>
+                            <a href="reservation.html" class="btn-outline">Ver detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card surface-card">
+                    <img class="experience-card-image" alt="Pessoas em uma aventura de bicicleta guiada">
+                    <div class="experience-card-content">
+                        <p class="experience-category">AVENTURA</p>
+                        <h3>Aventura de bicicleta guiada</h3>
+                        <p>Descubra rotas cênicas e tesouros escondidos em duas rodas.</p>
+                        <p class="experience-details">3 horas · Grupos pequenos de até 8 pessoas</p>
+                        <div class="experience-card-footer">
+                            <strong>A partir de $75</strong>
+                            <a href="reservation.html" class="btn-outline">Ver detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience-card surface-card">
+                    <img class="experience-card-image" alt="Família participando de uma aula de culinária">
+                    <div class="experience-card-content">
+                        <p class="experience-category">PARA FAMÍLIAS</p>
+                        <h3>Aula de culinária em família</h3>
+                        <p>Uma experiência culinária divertida e prática para todas as idades.</p>
+                        <p class="experience-details">2 horas · Até 6 hóspedes</p>
+                        <div class="experience-card-footer">
+                            <strong>A partir de $55</strong>
+                            <a href="reservation.html" class="btn-outline">Ver detalhes</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p class="concierge-cta">Não encontrou o que procura? <a href="mailto:grandstay@gmail.com" class="btn-outline">Fale com o concierge</a></p>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-container">

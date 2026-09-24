@@ -1,0 +1,203 @@
+/* ----- Hero ----- */
+.structure-main {
+    background: var(--surface);
+}
+.structure-hero {
+    position: relative;
+    height: 25.1rem;
+    overflow: hidden;
+    color: var(--light-text);
+}
+.structure-hero::after {
+    position: absolute;
+    inset: 0;
+    background: var(--image-overlay);
+    content: '';
+}
+.structure-hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 55%;
+}
+.structure-breadcrumb,
+.structure-hero-content {
+    position: absolute;
+    z-index: 1;
+}
+.structure-breadcrumb {
+    top: 1.8rem;
+    left: 4rem;
+    display: flex;
+    gap: .5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.structure-hero-content {
+    top: 50%;
+    left: 50%;
+    width: 70rem;
+    text-align: center;
+    transform: translate(-50%, -32%);
+}
+.structure-hero-content h2 {
+    color: var(--light-text);
+    font-size: 4.8rem;
+    line-height: 1.05;
+}
+.structure-hero-content p {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+/* ----- Introduction ----- */
+.structure-introduction {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    min-height: 28rem;
+    margin: 6rem auto 2.6rem;
+    padding: 1.8rem 5.9rem;
+    border: .1rem solid var(--border-color);
+    border-radius: 1.4rem;
+}
+.structure-introduction-image {
+    display: block;
+    flex: 0 0 62.1rem;
+    width: 62.1rem;
+    height: 24rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center 72%;
+}
+.structure-introduction-content {
+    max-width: 62rem;
+}
+.structure-introduction-content h2 {
+    font-size: 3rem;
+    line-height: 1.08;
+}
+.structure-introduction-content p {
+    margin-top: 2.6rem;
+    color: var(--body-text);
+    font-size: 1.8rem;
+    line-height: 1.35;
+}
+.structure-introduction-content .btn-outline {
+    min-width: 20rem;
+    min-height: 4.4rem;
+    margin-top: 3rem;
+    border-color: var(--primary-tan);
+    color: var(--primary-tan);
+    font-size: 1.6rem;
+}
+/* ----- Spaces ----- */
+.structure-spaces {
+    max-width: 132rem;
+    margin: 0 auto;
+}
+.structure-spaces > h2 {
+    margin: 2.3rem 0 3.5rem;
+    font-size: 3.8rem;
+    text-align: center;
+}
+.structure-spaces-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+}
+.structure-space-card {
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+    min-height: 20rem;
+    padding: 1.5rem;
+    border: .1rem solid var(--border-color);
+    border-radius: 1.4rem;
+}
+.structure-space-image {
+    display: block;
+    flex: 0 0 18rem;
+    width: 18rem;
+    height: 16.8rem;
+    border-radius: 1rem;
+    background: var(--surface-tint);
+    object-fit: cover;
+}
+.structure-space-content {
+    flex: 1;
+}
+.structure-space-content h3 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+}
+.structure-space-content p {
+    margin-top: .8rem;
+    color: var(--body-text);
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+.structure-space-content .btn-outline {
+    min-height: 4rem;
+    margin-top: 2.3rem;
+    font-size: 1.4rem;
+}
+/* ----- Amenities ----- */
+.structure-amenities {
+    margin-top: 8.6rem;
+    padding: 4.1rem 8rem 3.2rem;
+    background: var(--surface-light);
+    text-align: center;
+}
+.structure-amenities h2 {
+    font-size: 3rem;
+}
+.structure-amenities-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 110rem;
+    margin: 2.4rem auto 0;
+}
+.structure-amenities-list li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 8rem;
+    padding: 0 2rem;
+    border-left: .1rem solid var(--border-color);
+}
+.structure-amenities-list li:first-child {
+    border-left: 0;
+}
+.structure-amenity-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+    object-fit: contain;
+}
+.structure-amenities-list p {
+    color: var(--primary-dark-brown);
+    font-size: 1.6rem;
+}
+/* ----- Call to action ----- */
+.structure-cta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5.2rem 2rem 5.6rem;
+    text-align: center;
+}
+.structure-cta h2 {
+    font-size: 4.2rem;
+}
+.structure-cta p {
+    margin-top: 2rem;
+    color: var(--body-text);
+    font-size: 1.7rem;
+}
+.structure-cta .btn-primary {
+    min-width: 28rem;
+    min-height: 4.1rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+}

@@ -6,6 +6,7 @@
     <title>Nossa estrutura - Grand Stay</title>
 
     <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/our-structure.css">
 </head>
 <body>
     <header class="site-header flex-container">
@@ -23,9 +24,9 @@
         <a href="rooms.html" class="btn-primary header-action">Ver quartos</a>
     </header>
 
-    <main>
+    <main class="structure-main">
         <section class="structure-hero" aria-labelledby="structure-title">
-            <img class="structure-hero-image" alt="Área externa do Grand Stay com palmeiras e piscina">
+            <img class="structure-hero-image" src="./images/our_structure/landscape.jpg" alt="Área externa do Grand Stay com palmeiras e piscina">
 
             <nav class="structure-breadcrumb" aria-label="Navegação estrutural">
                 <a href="index.html">Início</a>
@@ -40,7 +41,7 @@
         </section>
 
         <section class="structure-introduction" aria-labelledby="introduction-title">
-            <img class="structure-introduction-image" alt="Pessoas reunidas em uma área externa do hotel">
+            <img class="structure-introduction-image" src="./images/our_structure/omar-lopez-JEKprmVt86E-unsplash.jpg" alt="Pessoas reunidas em uma área externa do hotel">
 
             <div class="structure-introduction-content">
                 <h2 id="introduction-title">Um lugar para chegar, relaxar e se conectar</h2>
@@ -61,21 +62,67 @@
                         <p>Gastronomia sazonal e coquetéis autorais no Restaurante Étoile.</p>
                         <a href="restaurant.html" class="btn-outline">Ver página do restaurante</a>
                     </div>
+                </article>
+
+                <article class="structure-space-card pool-space">
+                    <img class="structure-space-image" alt="Piscina externa do Grand Stay">
+
                     <div class="structure-space-content">
-                        <h3>Restaurante</h3>
-                        <p>Gastronomia sazonal e coquetéis autorais no Restaurante Étoile.</p>
-                        <a href="restaurant.html" class="btn-outline">Ver página do restaurante</a>
-                    </div>                    <div class="structure-space-content">
-                        <h3>Restaurante</h3>
-                        <p>Gastronomia sazonal e coquetéis autorais no Restaurante Étoile.</p>
-                        <a href="restaurant.html" class="btn-outline">Ver página do restaurante</a>
-                    </div>                    <div class="structure-space-content">
-                        <h3>Restaurante</h3>
-                        <p>Gastronomia sazonal e coquetéis autorais no Restaurante Étoile.</p>
-                        <a href="restaurant.html" class="btn-outline">Ver página do restaurante</a>
+                        <h3>Piscina e área de lazer</h3>
+                        <p>Piscina ao ar livre, bar e espaços para tardes tranquilas.</p>
+                        <a href="pool.html" class="btn-outline">Ver piscina e área de lazer</a>
+                    </div>
+                </article>
+
+                <article class="structure-space-card wellness-space">
+                    <img class="structure-space-image" alt="Ambiente de bem-estar e spa">
+
+                    <div class="structure-space-content">
+                        <h3>Bem-estar e spa</h3>
+                        <p>Tratamentos revigorantes, sauna e academia completa.</p>
+                        <a href="experiences.html" class="btn-outline">Conheça o bem-estar</a>
+                    </div>
+                </article>
+
+                <article class="structure-space-card events-space">
+                    <img class="structure-space-image" alt="Pessoas celebrando em um evento">
+
+                    <div class="structure-space-content">
+                        <h3>Reuniões e eventos</h3>
+                        <p>Espaços flexíveis para celebrações intimistas e encontros corporativos.</p>
+                        <a href="experiences.html" class="btn-outline">Planeje um evento</a>
                     </div>
                 </article>
             </div>
+        </section>
+
+        <section class="structure-amenities" aria-labelledby="amenities-title">
+            <h2 id="amenities-title">Tudo o que você precisa, ao seu alcance</h2>
+
+            <ul class="structure-amenities-list">
+                <li>
+                    <img class="structure-amenity-icon" alt="Ícone de sino">
+                    <p>Recepção 24 horas</p>
+                </li>
+                <li>
+                    <img class="structure-amenity-icon" alt="Ícone de carro">
+                    <p>Estacionamento com manobrista</p>
+                </li>
+                <li>
+                    <img class="structure-amenity-icon" src="./assets/icons/wi-fi-icon.svg" alt="">
+                    <p>Wi-Fi gratuito</p>
+                </li>
+                <li>
+                    <img class="structure-amenity-icon" alt="Ícone de concierge">
+                    <p>Serviço de concierge</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="structure-cta" aria-labelledby="cta-title">
+            <h2 id="cta-title">Viva o Grand Stay do seu jeito</h2>
+            <p>Reserve sua estadia e descubra espaços, serviços e experiências especiais.</p>
+            <a href="reservation.html" class="btn-primary">Reserve agora</a>
         </section>
     </main>
 

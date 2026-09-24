@@ -23,7 +23,126 @@
         <a href="rooms.html" class="btn-primary header-action">Ver quartos</a>
     </header>
 
-    <main></main>
+    <main class="restaurant-main">
+        <nav class="breadcrumb" aria-label="Navegação estrutural">
+            <a href="index.html">Início</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Restaurante</span>
+        </nav>
+
+        <section class="restaurant-introduction" aria-labelledby="restaurant-title">
+            <img class="restaurant-introduction-image" alt="Mesa com pratos e bebidas do Restaurante Étoile">
+
+            <div class="restaurant-introduction-content">
+                <p class="restaurant-label">RESTAURANTE ÉTOILE</p>
+                <h2 id="restaurant-title">Um sabor extraordinário</h2>
+                <p>Saboreie uma culinária inspirada, feita com ingredientes sazonais selecionados, em um ambiente elegante onde cada refeição se torna memorável.</p>
+                <p class="restaurant-location"><img alt="Ícone de localização">Localizado na Rua Mariazinha da Silva</p>
+                <a href="#reserve-table" class="btn-primary">Reserve uma mesa</a>
+            </div>
+        </section>
+
+        <section class="restaurant-hours" aria-labelledby="hours-title">
+            <h2 id="hours-title">Horários de funcionamento</h2>
+            <dl>
+                <div><dt>Café da manhã</dt><dd>7h às 10h30</dd></div>
+                <div><dt>Almoço</dt><dd>12h às 15h</dd></div>
+                <div><dt>Jantar</dt><dd>18h30 às 23h</dd></div>
+            </dl>
+        </section>
+
+        <section class="restaurant-menu-preview" aria-labelledby="menu-title">
+            <header>
+                <h2 id="menu-title">Gastronomia sazonal, preparada com cuidado</h2>
+                <p>Um menu que celebra o melhor de cada estação, elaborado com criatividade e atenção aos detalhes.</p>
+            </header>
+
+            <ul class="restaurant-menu-list">
+                <li class="restaurant-menu-item">
+                    <img alt="Risoto de cogumelos silvestres">
+                    <div>
+                        <h3>Risoto de cogumelos silvestres</h3>
+                        <p>Arroz arbório cremoso, cogumelos frescos e parmesão maturado.</p>
+                        <strong>$28</strong>
+                    </div>
+                </li>
+                <li class="restaurant-menu-item">
+                    <img alt="Prato principal com carnes e vegetais">
+                    <div>
+                        <h3>Prato principal da estação</h3>
+                        <p>Ingredientes frescos selecionados e sabores marcantes.</p>
+                        <strong>$28</strong>
+                    </div>
+                </li>
+                <li class="restaurant-menu-item">
+                    <img alt="Prato vegetariano do restaurante">
+                    <div>
+                        <h3>Opção vegetariana</h3>
+                        <p>Legumes sazonais, ervas frescas e ingredientes locais.</p>
+                        <strong>$28</strong>
+                    </div>
+                </li>
+                <li class="restaurant-menu-item">
+                    <img alt="Prato de carne servido com vegetais">
+                    <div>
+                        <h3>Corte especial</h3>
+                        <p>Carne selecionada, acompanhamentos sazonais e molho da casa.</p>
+                        <strong>$28</strong>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="restaurant-reservation" id="reserve-table" aria-labelledby="reservation-title">
+            <form action="restaurant.html">
+                <h2 id="reservation-title">Reserve sua mesa</h2>
+
+                <div class="restaurant-reservation-fields">
+                    <div class="input-group">
+                        <label for="restaurant-date">Data</label>
+                        <input type="date" id="restaurant-date" name="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="restaurant-time">Horário</label>
+                        <select id="restaurant-time" name="time" required>
+                            <option value="" selected disabled>Selecione o horário</option>
+                            <option value="19:00">19h</option>
+                            <option value="20:00">20h</option>
+                            <option value="21:00">21h</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="restaurant-guests">Hóspedes</label>
+                        <select id="restaurant-guests" name="guests" required>
+                            <option value="2">2 hóspedes</option>
+                            <option value="3">3 hóspedes</option>
+                            <option value="4">4 hóspedes</option>
+                            <option value="5">5+ hóspedes</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">Verificar disponibilidade</button>
+            </form>
+
+            <aside class="restaurant-details" aria-labelledby="details-title">
+                <h2 id="details-title">Detalhes da experiência</h2>
+                <ul>
+                    <li>Traje casual elegante</li>
+                    <li>Opções vegetarianas e veganas disponíveis</li>
+                    <li>Informe-nos sobre alergias alimentares</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="private-dining" aria-labelledby="private-dining-title">
+            <div>
+                <h2 id="private-dining-title">Jantares e eventos privativos</h2>
+                <p>De celebrações intimistas a grandes ocasiões, criamos experiências gastronômicas inesquecíveis em um ambiente elegante.</p>
+            </div>
+            <a href="mailto:grandstay@gmail.com" class="btn-outline">Planeje um evento</a>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-container">
