@@ -1,0 +1,240 @@
+/* ----- Restaurant introduction ----- */
+.restaurant-main {
+    padding: 1.7rem 4rem 0;
+}
+.restaurant-main .breadcrumb {
+    display: flex;
+    gap: .8rem;
+    color: var(--body-text);
+    font-size: 1.4rem;
+}
+.restaurant-introduction {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    max-width: 126rem;
+    margin: 1.5rem 0 3.8rem;
+}
+.restaurant-introduction-image {
+    display: block;
+    flex: 0 0 53rem;
+    width: 53rem;
+    height: 31rem;
+    border-radius: 1rem;
+    background: var(--surface-tint);
+    object-fit: cover;
+}
+.restaurant-introduction-content {
+    max-width: 52rem;
+}
+.restaurant-label {
+    color: var(--primary-tan);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.restaurant-introduction-content h2 {
+    max-width: 42rem;
+    margin-top: 2rem;
+    font-size: 4.2rem;
+    line-height: 1.1;
+}
+.restaurant-introduction-content > p:not(.restaurant-label):not(.restaurant-location) {
+    margin-top: .8rem;
+    color: var(--body-text);
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.restaurant-location {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-top: 3.1rem;
+    color: var(--body-text);
+    font-size: 1.5rem;
+}
+.restaurant-location img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.restaurant-introduction-content .btn-primary {
+    min-width: 20rem;
+    min-height: 4.6rem;
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+}
+/* ----- Opening hours ----- */
+.restaurant-hours {
+    display: flex;
+    align-items: center;
+    min-height: 7.6rem;
+    border-top: .1rem solid var(--border-color);
+    border-bottom: .1rem solid var(--border-color);
+}
+.restaurant-hours h2 {
+    flex: 0 0 27%;
+    padding-left: 1.5rem;
+    font-size: 2rem;
+}
+.restaurant-hours dl {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex: 1;
+    gap: 10rem;
+}
+.restaurant-hours dt {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.restaurant-hours dd {
+    margin-top: .7rem;
+    color: var(--body-text);
+    font-size: 1.4rem;
+}
+/* ----- Seasonal menu ----- */
+.restaurant-menu-preview {
+    padding: 3.8rem 0 4rem;
+    overflow: hidden;
+}
+.restaurant-menu-preview header {
+    text-align: center;
+}
+.restaurant-menu-preview header h2 {
+    font-size: 3rem;
+}
+.restaurant-menu-preview header p {
+    margin-top: .9rem;
+    color: var(--body-text);
+    font-size: 1.4rem;
+}
+.restaurant-menu-list {
+    display: flex;
+    gap: 7rem;
+    margin-top: 4.8rem;
+}
+.restaurant-menu-item {
+    display: flex;
+    flex: 0 0 32rem;
+    align-items: center;
+    gap: 1.2rem;
+}
+.restaurant-menu-item img {
+    flex: 0 0 11.8rem;
+    width: 11.8rem;
+    height: 11.8rem;
+    border-radius: 50%;
+    background: var(--surface-tint);
+    object-fit: cover;
+}
+.restaurant-menu-item h3 {
+    font: 700 1.7rem var(--font-sans);
+}
+.restaurant-menu-item p {
+    margin-top: .8rem;
+    color: var(--body-text);
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+.restaurant-menu-item strong {
+    display: block;
+    margin-top: 1.3rem;
+    font-size: 1.8rem;
+}
+/* ----- Table reservation ----- */
+.restaurant-reservation {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 6rem;
+    max-width: 108.5rem;
+    margin: 0 auto;
+    padding: 2.5rem 0 5rem;
+}
+.restaurant-reservation h2 {
+    font-size: 2.5rem;
+}
+.restaurant-reservation-fields {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr .7fr;
+    gap: 2rem;
+    margin-top: 2.1rem;
+}
+.restaurant-reservation .input-group {
+    gap: .7rem;
+}
+.restaurant-reservation label {
+    color: var(--body-text);
+    font-size: 1.4rem;
+}
+.restaurant-reservation input,
+.restaurant-reservation select {
+    width: 100%;
+    height: 4.1rem;
+    padding: 0 1.2rem;
+    border: .1rem solid var(--border-color);
+    border-radius: .8rem;
+    background: transparent;
+    color: var(--body-text);
+    font: 1.4rem var(--font-sans);
+}
+.restaurant-reservation form > .btn-primary {
+    min-width: 18rem;
+    min-height: 4.1rem;
+    margin-top: 2.1rem;
+    margin-left: 58.5rem;
+    font-size: 1.4rem;
+}
+.restaurant-details {
+    padding-top: .1rem;
+}
+.restaurant-details ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.restaurant-details li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--body-text);
+    font-size: 1.4rem;
+}
+.restaurant-details li::before {
+    width: 1.8rem;
+    height: 1.8rem;
+    border: .1rem solid var(--border-color);
+    border-radius: .4rem;
+    content: '';
+}
+/* ----- Private dining ----- */
+.private-dining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+    min-height: 18.3rem;
+    margin: 0 -4rem;
+    padding: 3rem 8rem;
+    background: var(--primary-dark-brown);
+    color: var(--light-text);
+    text-align: center;
+}
+.private-dining div {
+    max-width: 78rem;
+}
+.private-dining h2 {
+    font-size: 3.1rem;
+}
+.private-dining p {
+    margin-top: 1.4rem;
+    color: var(--surface-tint);
+    font-size: 2rem;
+    line-height: 1.25;
+}
+.private-dining .btn-outline {
+    min-width: 16rem;
+    min-height: 4.3rem;
+    border: .2rem solid var(--light-text);
+    border-radius: .8rem;
+    color: var(--light-text);
+    font-size: 1.4rem;
+}

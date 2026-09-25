@@ -23,6 +23,7 @@
     --muted-text: var(--accent);
     --surface: var(--light-text);
     --placeholder-text: var(--accent);
+    --icon-tan-filter: invert(61%) sepia(15%) saturate(817%) hue-rotate(351deg) brightness(91%) contrast(84%);
     /* Variáveis  */
     --font-sans: 'DM Sans', Arial, sans-serif;
     --font-serif: 'Lora', Georgia, serif;
