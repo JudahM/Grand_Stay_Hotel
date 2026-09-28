@@ -1,0 +1,259 @@
+/* Responsividade — página inicial */
+@media (max-width: 1050px) {
+    .site-header {
+        padding-right: 2.8rem;
+    }
+
+    .nav-menu ul {
+        gap: 2rem;
+    }
+
+    .nav-option {
+        font-size: 1.6rem;
+    }
+
+    .hero {
+        min-height: 52rem;
+        padding: 5rem;
+    }
+
+    .booking-bar form {
+        right: 5rem;
+        bottom: 3rem;
+        min-width: 0;
+    }
+
+    .feature-row,
+    .feature-row.reverse {
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+
+    .cta-box {
+        padding: 4rem 6rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .site-header {
+        flex-wrap: wrap;
+        gap: 2rem;
+        min-height: 0;
+        padding: 2.2rem 2rem;
+    }
+
+    .logo-light {
+        font-size: 2.4rem;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.2rem 1.8rem;
+    }
+
+    .nav-option {
+        font-size: 1.3rem;
+    }
+
+    .site-header .action {
+        min-height: 3.8rem;
+        padding: 0 1.3rem;
+        font-size: 1.4rem;
+    }
+
+    .hero {
+        display: block;
+        min-height: 0;
+        padding: 4.5rem 2rem 2rem;
+    }
+
+    .hero-content {
+        width: auto;
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3.6rem, 11vw, 4.8rem);
+    }
+
+    .hero-content p {
+        font-size: 1.8rem;
+    }
+
+    .booking-bar form {
+        position: static;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        margin-top: 4rem;
+        padding: 2rem;
+    }
+
+    .input-group input,
+    .booking-bar .btn-dark {
+        width: 100%;
+        min-width: 0;
+        height: 4.4rem;
+    }
+
+    .image-caption {
+        display: none;
+    }
+
+    .features {
+        gap: 4rem;
+        padding: 4.5rem 2rem;
+    }
+
+    .section-header h2,
+    .rooms .section-header h2 {
+        font-size: 3.5rem;
+    }
+
+    .feature-row,
+    .feature-row.reverse {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .feature-row.reverse .feature-image,
+    .feature-row.reverse .feature-content {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .feature-row.reverse .feature-image {
+        order: 0;
+    }
+
+    .feature-image img {
+        height: 25rem;
+    }
+
+    .feature-content {
+        gap: 2.7rem;
+    }
+
+    .feature-item h3 {
+        font-size: 2.6rem;
+    }
+
+    .rooms {
+        padding-top: 4.5rem;
+    }
+
+    .rooms .section-header p {
+        font-size: 2.3rem;
+    }
+
+    .rooms-carousel {
+        margin-top: 3.5rem;
+        padding: 0 2rem;
+    }
+
+    .carousel-track {
+        gap: 2rem;
+    }
+
+    .room-card {
+        flex-basis: 100%;
+        height: 30rem;
+        padding: 1.7rem 1.4rem;
+    }
+
+    .card-header {
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .card-body {
+        width: auto;
+        font-size: 1.5rem;
+    }
+
+    .card-footer {
+        gap: 1rem;
+    }
+
+    .price {
+        font-size: 2rem;
+    }
+
+    .carousel-control {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .carousel-control.prev {
+        left: .5rem;
+    }
+
+    .carousel-control.next {
+        right: .5rem;
+    }
+
+    blockquote {
+        font-size: 2.3rem;
+    }
+
+    .cta {
+        padding: 0 2rem 3rem;
+    }
+
+    .cta-box {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2.5rem;
+        min-height: 0;
+        padding: 3rem 2.5rem;
+    }
+
+    .cta-text h2 {
+        font-size: 2.6rem;
+    }
+
+    .cta-button,
+    .cta-button .btn-light {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 3.5rem 2rem;
+    }
+
+    .footer-col {
+        min-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 420px) {
+    .site-header {
+        align-items: flex-start;
+    }
+
+    .site-header .action {
+        margin-left: auto;
+    }
+
+    .btn-transparent {
+        padding: 0 1rem;
+        font-size: 1.4rem;
+    }
+
+    .card-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,231 @@
+/* Responsividade — listagem de quartos */
+@media (max-width: 1100px) {
+    .site-header {
+        padding-right: 2.8rem;
+    }
+
+    .nav-menu ul {
+        gap: 2rem;
+    }
+
+    .nav-option {
+        font-size: 1.6rem;
+    }
+
+    .rooms-booking-bar,
+    .content-layout,
+    .pagination-wrap {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
+    .pagination-wrap {
+        padding-left: 0;
+    }
+
+    .rooms-booking-bar form {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .content-layout {
+        flex-direction: column;
+    }
+
+    .sidebar-filters {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .sidebar-filters form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 3rem;
+    }
+
+    .sidebar-filters .btn-outline {
+        align-self: end;
+        margin: 2rem 0 0;
+    }
+
+    .results-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .site-header {
+        flex-wrap: wrap;
+        gap: 2rem;
+        min-height: 0;
+        padding: 2.2rem 2rem;
+    }
+
+    .logo-light {
+        font-size: 2.4rem;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.2rem 1.8rem;
+    }
+
+    .nav-option {
+        font-size: 1.3rem;
+    }
+
+    .site-header .header-action {
+        min-height: 3.8rem;
+        padding: 0 1.3rem;
+        font-size: 1.4rem;
+    }
+
+    main {
+        padding-bottom: 5rem;
+    }
+
+    .breadcrumb {
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .page-title {
+        padding: 1.5rem 2rem 3rem;
+    }
+
+    .page-title h2 {
+        font-size: 3.5rem;
+    }
+
+    .page-title p {
+        font-size: 1.8rem;
+    }
+
+    .rooms-booking-bar,
+    .content-layout,
+    .pagination-wrap {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .rooms-booking-bar {
+        padding: 2rem;
+    }
+
+    .rooms-booking-bar form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .rooms-booking-bar .input-group,
+    .rooms-booking-bar .input-group input,
+    .rooms-booking-bar .input-group select,
+    .rooms-booking-bar .btn-dark {
+        width: 100%;
+    }
+
+    .sidebar-filters {
+        padding: 2rem;
+    }
+
+    .sidebar-filters form {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar-filters .btn-outline {
+        width: 100%;
+    }
+
+    .results-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    .results-header select {
+        width: 100%;
+    }
+
+    .room-list {
+        gap: 1.8rem;
+        padding: 1rem;
+    }
+
+    .room-list-card {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 1.6rem;
+        padding: 1.2rem;
+    }
+
+    .room-list-card > .room-image-link {
+        width: 100%;
+        flex-basis: auto;
+        min-height: 0;
+        height: 53vw;
+    }
+
+    .room-info {
+        padding: 0;
+    }
+
+    .room-info h3 {
+        font-size: 2.2rem;
+    }
+
+    .badges {
+        gap: .8rem;
+        margin-top: 1.6rem;
+    }
+
+    .room-pricing {
+        align-items: flex-start;
+        flex-basis: auto;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .room-pricing .btn-dark {
+        width: 100%;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        gap: .8rem;
+    }
+
+    .pagination a,
+    .pagination a:first-child,
+    .pagination a:last-child {
+        min-width: 4.5rem;
+        min-height: 4.5rem;
+        padding: 0 1.2rem;
+        font-size: 1.8rem;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 3.5rem 2rem;
+    }
+
+    .footer-col {
+        min-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 420px) {
+    .site-header .header-action {
+        margin-left: auto;
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+}

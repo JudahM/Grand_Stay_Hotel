@@ -1,0 +1,189 @@
+/* Responsividade — detalhes do quarto */
+@media (max-width: 1150px) {
+    .site-header {
+        padding-right: 2.8rem;
+    }
+
+    .nav-menu ul {
+        gap: 2rem;
+    }
+
+    .nav-option {
+        font-size: 1.6rem;
+    }
+
+    .room-details-layout {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 0 3rem;
+    }
+
+    .room-details-right {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(28rem, 38rem);
+        gap: 3rem;
+    }
+
+    .room-summary,
+    .reservation-card {
+        margin-top: 0;
+    }
+
+    .help-card,
+    .house-rules {
+        grid-column: 1 / -1;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .site-header {
+        flex-wrap: wrap;
+        gap: 2rem;
+        min-height: 0;
+        padding: 2.2rem 2rem;
+    }
+
+    .logo-light {
+        font-size: 2.4rem;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav-menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.2rem 1.8rem;
+    }
+
+    .nav-option {
+        font-size: 1.3rem;
+    }
+
+    .site-header .header-action {
+        min-height: 3.8rem;
+        padding: 0 1.3rem;
+        font-size: 1.4rem;
+    }
+
+    main {
+        padding-bottom: 4.5rem;
+    }
+
+    .breadcrumb {
+        flex-wrap: wrap;
+        padding: 1.5rem 2rem 3.5rem;
+        font-size: 1.4rem;
+    }
+
+    .room-details-layout {
+        gap: 3.5rem;
+        padding: 0 2rem;
+    }
+
+    .main-image {
+        height: min(64vw, 38rem);
+    }
+
+    .thumbnail-list {
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .thumbnail {
+        height: 18vw;
+    }
+
+    .about-card {
+        min-height: 0;
+        margin: 3rem 0 0;
+        padding: 2.5rem 2rem;
+    }
+
+    .amenities-list {
+        gap: 1.4rem;
+    }
+
+    .room-details-right {
+        display: flex;
+        gap: 0;
+    }
+
+    .room-summary h2 {
+        font-size: 3.5rem;
+    }
+
+    .room-specs {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .room-description {
+        margin-top: 2.5rem;
+    }
+
+    .room-price strong {
+        font-size: 3.4rem;
+    }
+
+    .room-price span {
+        margin-left: .5rem;
+        font-size: 2.2rem;
+    }
+
+    .reservation-card {
+        margin-top: 3rem;
+        padding: 2.2rem 2rem;
+    }
+
+    .date-fields {
+        gap: 1.4rem;
+    }
+
+    .reservation-card .btn-primary {
+        width: 100%;
+        min-width: 0;
+        min-height: 5.5rem;
+    }
+
+    .help-card {
+        margin-top: 3rem;
+    }
+
+    .house-rules {
+        margin-top: 3rem;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 3.5rem 2rem;
+    }
+
+    .footer-col {
+        min-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 420px) {
+    .site-header .header-action {
+        margin-left: auto;
+    }
+
+    .amenities-list,
+    .date-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .thumbnail {
+        height: 20vw;
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+}

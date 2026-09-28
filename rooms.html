@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/rooms.css">
+    <link rel="stylesheet" href="./responsive/room.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <a href="rooms.html" class="btn-primary header-action">Ver quartos</a>
     </header>
 
-    <main>
+    <main class="rooms-page">
         <nav aria-label="Navegação estrutural" class="breadcrumb">
             <a href="index.html">Início</a>
             <span aria-hidden="true">/</span>
@@ -43,12 +44,18 @@
             <form action="rooms.html">
                 <div class="input-group">
                     <label for="check-in">ENTRADA</label>
-                    <input type="date" id="check-in" name="check-in" value="2001-05-01">
+                    <div class="date-input">
+                        <input type="date" id="check-in" name="check-in" value="2001-05-01">
+                        <img class="date-icon" src="./assets/icons/calendar.svg" alt="">
+                    </div>
                 </div>
 
                 <div class="input-group">
                     <label for="check-out">SAÍDA</label>
-                    <input type="date" id="check-out" name="check-out" value="2001-05-01">
+                    <div class="date-input">
+                        <input type="date" id="check-out" name="check-out" value="2001-05-01">
+                        <img class="date-icon" src="./assets/icons/calendar.svg" alt="">
+                    </div>
                 </div>
 
                 <div class="input-group">
@@ -126,10 +133,12 @@
                 <ul class="room-list surface-card">
                     <li>
                         <article class="room-list-card">
-                            <img src="./images/rooms/room-01.jpg" alt="Quarto Premium Cruzeiro com cama king size">
+                            <a class="room-image-link" href="room-details.html" aria-label="Ver detalhes do Quarto 01">
+                                <img src="./images/rooms/room-01.jpg" alt="Quarto 01 com cama king size">
+                            </a>
 
                             <section class="room-info">
-                                <h3>Quarto Premium Cruzeiro</h3>
+                                <h3>Quarto 01</h3>
                                 <p class="specs">2 hóspedes <span>|</span> 1 cama king size</p>
                                 <p class="desc">Um ambiente elegante, com conforto e detalhes especiais para tornar a sua estadia memorável.</p>
                                 <ul class="badges">
@@ -148,10 +157,12 @@
 
                     <li>
                         <article class="room-list-card">
-                            <img src="./images/rooms/room-02.jpg" alt="Quarto Mengão com cama king size">
+                            <a class="room-image-link" href="room-02.html" aria-label="Ver detalhes do Quarto 02">
+                                <img src="./images/rooms/room-02.jpg" alt="Quarto 02 com cama king size">
+                            </a>
 
                             <section class="room-info">
-                                <h3>Quarto Mengão</h3>
+                                <h3>Quarto 02</h3>
                                 <p class="specs">2 hóspedes <span>|</span> 1 cama king size</p>
                                 <p class="desc">Um ambiente elegante, com conforto e detalhes especiais para tornar a sua estadia memorável.</p>
                                 <ul class="badges">
@@ -163,17 +174,19 @@
 
                             <section class="room-pricing">
                                 <strong>$250/noite</strong>
-                                <a href="room-details.html" class="btn-dark">Ver detalhes</a>
+                                <a href="room-02.html" class="btn-dark">Ver detalhes</a>
                             </section>
                         </article>
                     </li>
 
                     <li>
                         <article class="room-list-card">
-                            <img src="./images/rooms/room-03.jpg" alt="Quarto Galo com cama king size e vista para o mar">
+                            <a class="room-image-link" href="room-03.html" aria-label="Ver detalhes do Quarto 03">
+                                <img src="./images/rooms/room-03.jpg" alt="Quarto 03 com cama king size e vista para o mar">
+                            </a>
 
                             <section class="room-info">
-                                <h3>Quarto Galo</h3>
+                                <h3>Quarto 03</h3>
                                 <p class="specs">2 hóspedes <span>|</span> 1 cama king size</p>
                                 <p class="desc">Um ambiente elegante, com conforto e detalhes especiais para tornar a sua estadia memorável.</p>
                                 <ul class="badges">
@@ -185,21 +198,23 @@
 
                             <section class="room-pricing">
                                 <strong>$250/noite</strong>
-                                <a href="room-details.html" class="btn-dark">Ver detalhes</a>
+                                <a href="room-03.html" class="btn-dark">Ver detalhes</a>
                             </section>
                         </article>
                     </li>
                 </ul>
-
-                <nav aria-label="Paginação" class="pagination">
-                    <a href="rooms.html" class="btn-outline">Anterior</a>
-                    <a href="rooms.html" class="btn-outline">1</a>
-                    <a href="rooms.html" class="btn-dark active" aria-current="page">2</a>
-                    <a href="rooms.html" class="btn-outline">3</a>
-                    <a href="rooms.html" class="btn-outline">Próximo</a>
-                </nav>
             </section>
         </section>
+
+        <div class="pagination-wrap">
+            <nav aria-label="Paginação" class="pagination">
+                <a href="rooms-3.html" class="btn-outline">Anterior</a>
+                <a href="rooms.html" class="btn-dark active" aria-current="page">1</a>
+                <a href="rooms-2.html" class="btn-outline">2</a>
+                <a href="rooms-3.html" class="btn-outline">3</a>
+                <a href="rooms-2.html" class="btn-outline">Próximo</a>
+            </nav>
+        </div>
     </main>
 
     <footer>
