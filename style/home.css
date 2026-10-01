@@ -6,7 +6,7 @@
     min-height: 45.4rem;
     padding: 6rem 8rem;
     color: var(--light-text);
-    background: var(--hero-overlay), url('../images/home/hotel_entrance_hall.jpg') center 53% / cover no-repeat;
+    background: var(--hero-overlay), url('../assets/images/home/hotel_entrance_hall.jpg') center 53% / cover no-repeat;
 }
 .hero-content {
     width: 50rem;
